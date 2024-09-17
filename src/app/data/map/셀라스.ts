@@ -1,0 +1,340 @@
+const 셀라스: RegionInfo[] = [
+  {
+    id: 1,
+    map_region: '셀라스',
+    map_name: '빛이 마지막으로 닿는 곳 1',
+    symbol: 600,
+    mobs: [
+      {
+        name: '베리타테',
+        level: 245,
+        exp: 518511,
+        meso: 1837,
+        number_of_mob: 25,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 2,
+    map_region: '셀라스',
+    map_name: '빛이 마지막으로 닿는 곳 2',
+    symbol: 600,
+    mobs: [
+      {
+        name: '베리타테',
+        level: 245,
+        exp: 518511,
+        meso: 1837,
+        number_of_mob: 32,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 3,
+    map_region: '셀라스',
+    map_name: '빛이 마지막으로 닿는 곳 3',
+    symbol: 600,
+    mobs: [
+      {
+        name: '베리타테',
+        level: 245,
+        exp: 518511,
+        meso: 1837,
+        number_of_mob: 37,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 4,
+    map_region: '셀라스',
+    map_name: '빛이 마지막으로 닿는 곳 4',
+    symbol: 600,
+    mobs: [
+      {
+        name: '뽈라르',
+        level: 246,
+        number_of_mob: 25,
+        exp: 527106,
+        meso: 1845,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 5,
+    map_region: '셀라스',
+    map_name: '빛이 마지막으로 닿는 곳 5',
+    symbol: 600,
+    mobs: [
+      {
+        name: '뽈라르',
+        level: 246,
+        number_of_mob: 32,
+        exp: 527106,
+        meso: 1845,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 6,
+    map_region: '셀라스',
+    map_name: '빛이 마지막으로 닿는 곳 6',
+    symbol: 600,
+    mobs: [
+      {
+        name: '뽈라르',
+        level: 246,
+        number_of_mob: 38,
+        exp: 527106,
+        meso: 1845,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 7,
+    map_region: '셀라스',
+    map_name: '빛이 마지막으로 닿는 곳 7',
+    symbol: 600,
+    mobs: [
+      {
+        name: '바다렐이',
+        level: 247,
+        number_of_mob: 25,
+        exp: 535749,
+        meso: 1852,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 8,
+    map_region: '셀라스',
+    map_name: '빛이 마지막으로 닿는 곳 8',
+    symbol: 600,
+    mobs: [
+      {
+        name: '바다렐이',
+        level: 247,
+        number_of_mob: 31,
+        exp: 535749,
+        meso: 1852,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 9,
+    map_region: '셀라스',
+    map_name: '빛이 마지막으로 닿는 곳 9',
+    symbol: 600,
+    mobs: [
+      {
+        name: '바다렐이',
+        level: 247,
+        number_of_mob: 27,
+        exp: 535749,
+        meso: 1852,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 10,
+    map_region: '셀라스',
+    map_name: '끝없이 추락하는 심해 1',
+    symbol: 640,
+    mobs: [
+      {
+        name: '히아데스',
+        level: 248,
+        number_of_mob: 25,
+        exp: 544459,
+        meso: 1860,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 11,
+    map_region: '셀라스',
+    map_name: '끝없이 추락하는 심해 2',
+    symbol: 640,
+    mobs: [
+      {
+        name: '히아데스',
+        level: 248,
+        number_of_mob: 33,
+        exp: 544459,
+        meso: 1860,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 12,
+    map_region: '셀라스',
+    map_name: '끝없이 추락하는 심해 3',
+    symbol: 640,
+    mobs: [
+      {
+        name: '히아데스',
+        level: 248,
+        number_of_mob: 38,
+        exp: 544459,
+        meso: 1860,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 13,
+    map_region: '셀라스',
+    map_name: '끝없이 추락하는 심해 4',
+    symbol: 640,
+    mobs: [
+      {
+        name: '데네볼라',
+        level: 249,
+        number_of_mob: 25,
+        exp: 553217,
+        meso: 1867,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 14,
+    map_region: '셀라스',
+    map_name: '끝없이 추락하는 심해 5',
+    symbol: 640,
+    mobs: [
+      {
+        name: '데네볼라',
+        level: 249,
+        number_of_mob: 32,
+        exp: 553217,
+        meso: 1867,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 15,
+    map_region: '셀라스',
+    map_name: '끝없이 추락하는 심해 6',
+    symbol: 640,
+    mobs: [
+      {
+        name: '데네볼라',
+        level: 249,
+        number_of_mob: 37,
+        exp: 553217,
+        meso: 1867,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 16,
+    map_region: '셀라스',
+    map_name: '별이 삼켜진 심해 1',
+    symbol: 670,
+    mobs: [
+      {
+        name: '릴리 보레아',
+        level: 250,
+        number_of_mob: 24,
+        exp: 584807,
+        meso: 1875,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 17,
+    map_region: '셀라스',
+    map_name: '별이 삼켜진 심해 2',
+    symbol: 670,
+    mobs: [
+      {
+        name: '릴리 보레아',
+        level: 250,
+        number_of_mob: 32,
+        exp: 584807,
+        meso: 1875,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 18,
+    map_region: '셀라스',
+    map_name: '별이 삼켜진 심해 3',
+    symbol: 670,
+    mobs: [
+      {
+        name: '릴리 보레아',
+        level: 250,
+        number_of_mob: 38,
+        exp: 584807,
+        meso: 1875,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 19,
+    map_region: '셀라스',
+    map_name: '별이 삼켜진 심해 4',
+    symbol: 670,
+    mobs: [
+      {
+        name: '안젤루스',
+        level: 251,
+        number_of_mob: 24,
+        exp: 594040,
+        meso: 1882,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 20,
+    map_region: '셀라스',
+    map_name: '별이 삼켜진 심해 5',
+    symbol: 670,
+    mobs: [
+      {
+        name: '안젤루스',
+        level: 251,
+        number_of_mob: 31,
+        exp: 594040,
+        meso: 1882,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 21,
+    map_region: '셀라스',
+    map_name: '별이 삼켜진 심해 6',
+    symbol: 670,
+    mobs: [
+      {
+        name: '안젤루스',
+        level: 251,
+        number_of_mob: 39,
+        exp: 594040,
+        meso: 1882,
+      },
+    ],
+    burning_field: 0,
+  },
+];
+
+export default 셀라스;

@@ -1,0 +1,41 @@
+'use client';
+
+import { Box } from '@mui/material';
+import { useQueryClient } from '@tanstack/react-query';
+import { useEffect } from 'react';
+import CharacterLevelInput from './Form/CharacterLevelInput';
+import RateContent from '@/app/_component/Content/RateContent';
+import RegionContent from '@/app/_component/Content/RegionContent';
+import AreaTab from '@/app/_component/Tab/AreaTab';
+import RegionTabUI from '@/app/_component/Tab/UI/RegionTabUI';
+
+const InputPageContent = () => {
+  const queryClient = useQueryClient();
+
+  useEffect(() => {
+    queryClient.clear();
+  }, [queryClient]);
+
+  return (
+    <Box>
+      <Box component="section" py={3}>
+        <CharacterLevelInput />
+      </Box>
+
+      <Box component="section">
+        <RateContent />
+      </Box>
+
+      <Box component="section">
+        <AreaTab />
+        <RegionTabUI />
+      </Box>
+
+      <Box component="section">
+        <RegionContent />
+      </Box>
+    </Box>
+  );
+};
+
+export default InputPageContent;

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mapleburningfield.com/
+
+# Sitemaps
+Sitemap: https://mapleburningfield.com/sitemap.xml

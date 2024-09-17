@@ -1,0 +1,363 @@
+const 탈라하트: RegionInfo[] = [
+  {
+    id: 1,
+    map_region: '탈라하트',
+    map_name: '재와 침묵의 땅 1',
+    symbol: 630,
+    mobs: [
+      {
+        name: '재를 먹는 사념',
+        level: 290,
+        exp: 4793318,
+        meso: 2175,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 2,
+    map_region: '탈라하트',
+    map_name: '재와 침묵의 땅 2',
+    symbol: 630,
+    mobs: [
+      {
+        name: '재를 먹는 사념',
+        level: 290,
+        exp: 4793318,
+        meso: 2175,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 3,
+    map_region: '탈라하트',
+    map_name: '재와 침묵의 땅 3',
+    symbol: 630,
+    mobs: [
+      {
+        name: '재를 먹는 사념',
+        level: 290,
+        exp: 4793318,
+        meso: 2175,
+        number_of_mob: 20,
+      },
+      {
+        name: '침묵을 삼키는 사념',
+        level: 291,
+        exp: 4847012,
+        meso: 2182,
+        number_of_mob: 20,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 4,
+    map_region: '탈라하트',
+    map_name: '재와 침묵의 땅 4',
+    symbol: 630,
+    mobs: [
+      {
+        name: '침묵을 삼키는 사념',
+        level: 291,
+        exp: 4847012,
+        meso: 2182,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 5,
+    map_region: '탈라하트',
+    map_name: '재와 침묵의 땅 5',
+    symbol: 630,
+    mobs: [
+      {
+        name: '침묵을 삼키는 사념',
+        level: 291,
+        exp: 4847012,
+        meso: 2182,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 6,
+    map_region: '탈라하트',
+    map_name: '섭리와 운명의 전쟁터 1',
+    symbol: 660,
+    mobs: [
+      {
+        name: '영혼 도살자',
+        level: 291,
+        exp: 4847012,
+        meso: 2182,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 7,
+    map_region: '탈라하트',
+    map_name: '섭리와 운명의 전쟁터 2',
+    symbol: 660,
+    mobs: [
+      {
+        name: '영혼 도살자',
+        level: 291,
+        exp: 4847012,
+        meso: 2182,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 8,
+    map_region: '탈라하트',
+    map_name: '섭리와 운명의 전쟁터 3',
+    symbol: 660,
+    mobs: [
+      {
+        name: '영혼 도살자',
+        level: 291,
+        exp: 4847012,
+        meso: 2182,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 9,
+    map_region: '탈라하트',
+    map_name: '심판과 운명의 전쟁터 1',
+    symbol: 660,
+    mobs: [
+      {
+        name: '폭풍의 심판자',
+        level: 292,
+        exp: 4907812,
+        meso: 2190,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 10,
+    map_region: '탈라하트',
+    map_name: '심판과 운명의 전쟁터 2',
+    symbol: 660,
+    mobs: [
+      {
+        name: '폭풍의 심판자',
+        level: 292,
+        exp: 4907812,
+        meso: 2190,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 11,
+    map_region: '탈라하트',
+    map_name: '심판과 운명의 전쟁터 3',
+    symbol: 660,
+    mobs: [
+      {
+        name: '폭풍의 심판자',
+        level: 292,
+        exp: 4907812,
+        meso: 2190,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 12,
+    map_region: '탈라하트',
+    map_name: '영원과 운명의 전쟁터 1',
+    symbol: 660,
+    mobs: [
+      {
+        name: '영원의 집행자',
+        level: 293,
+        exp: 4968977,
+        meso: 2197,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 13,
+    map_region: '탈라하트',
+    map_name: '영원과 운명의 전쟁터 2',
+    symbol: 660,
+    mobs: [
+      {
+        name: '영원의 집행자',
+        level: 293,
+        exp: 4968977,
+        meso: 2197,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 14,
+    map_region: '탈라하트',
+    map_name: '영원과 운명의 전쟁터 3',
+    symbol: 660,
+    mobs: [
+      {
+        name: '영원의 집행자',
+        level: 293,
+        exp: 4968977,
+        meso: 2197,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 15,
+    map_region: '탈라하트',
+    map_name: '밤의 길 1',
+    symbol: 700,
+    mobs: [
+      {
+        name: '밤의 인도자',
+        level: 294,
+        exp: 5023491,
+        meso: 2205,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 16,
+    map_region: '탈라하트',
+    map_name: '밤의 길 2',
+    symbol: 700,
+    mobs: [
+      {
+        name: '밤의 인도자',
+        level: 294,
+        exp: 5023491,
+        meso: 2205,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 17,
+    map_region: '탈라하트',
+    map_name: '밤의 길 3',
+    symbol: 700,
+    mobs: [
+      {
+        name: '밤의 인도자',
+        level: 294,
+        exp: 5023491,
+        meso: 2205,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 18,
+    map_region: '탈라하트',
+    map_name: '밤의 길 4',
+    symbol: 700,
+    mobs: [
+      {
+        name: '밤의 인도자',
+        level: 294,
+        exp: 5023491,
+        meso: 2205,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 19,
+    map_region: '탈라하트',
+    map_name: '환영의 길 1',
+    symbol: 700,
+    mobs: [
+      {
+        name: '환영의 인도자',
+        level: 294,
+        exp: 5023491,
+        meso: 2205,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 20,
+    map_region: '탈라하트',
+    map_name: '환영의 길 2',
+    symbol: 700,
+    mobs: [
+      {
+        name: '환영의 인도자',
+        level: 294,
+        exp: 5023491,
+        meso: 2205,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 21,
+    map_region: '탈라하트',
+    map_name: '환영의 길 3',
+    symbol: 700,
+    mobs: [
+      {
+        name: '환영의 인도자',
+        level: 294,
+        exp: 5023491,
+        meso: 2205,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 22,
+    map_region: '탈라하트',
+    map_name: '환영의 길 4',
+    symbol: 700,
+    mobs: [
+      {
+        name: '환영의 인도자',
+        level: 294,
+        exp: 5023491,
+        meso: 2205,
+        number_of_mob: 40,
+      },
+    ],
+    burning_field: 0,
+  },
+];
+
+export default 탈라하트;

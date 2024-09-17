@@ -1,0 +1,288 @@
+const 오디움: RegionInfo[] = [
+  {
+    id: 1,
+    map_region: '오디움',
+    map_name: '성문으로 가는 길 1',
+    symbol: 130,
+    mobs: [
+      {
+        name: '강화형 파수꾼 금강',
+        level: 270,
+        exp: 2445217,
+        meso: 2025,
+        number_of_mob: 34,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 2,
+    map_region: '오디움',
+    map_name: '성문으로 가는 길 2',
+    symbol: 130,
+    mobs: [
+      {
+        name: '강화형 파수꾼 금강',
+        level: 270,
+        exp: 2445217,
+        meso: 2025,
+        number_of_mob: 19,
+      },
+      {
+        name: '강화형 파수꾼 감람',
+        level: 270,
+        exp: 2445217,
+        meso: 2025,
+        number_of_mob: 15,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 3,
+    map_region: '오디움',
+    map_name: '성문으로 가는 길 3',
+    symbol: 130,
+    mobs: [
+      {
+        name: '강화형 파수꾼 감람',
+        level: 270,
+        exp: 2445217,
+        meso: 2025,
+        number_of_mob: 37,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 4,
+    map_region: '오디움',
+    map_name: '성문으로 가는 길 4',
+    symbol: 130,
+    mobs: [
+      {
+        name: '강화형 파수꾼 산호',
+        level: 270,
+        exp: 2445217,
+        meso: 2025,
+        number_of_mob: 39,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 5,
+    map_region: '오디움',
+    map_name: '성문으로 가는 길 5',
+    symbol: 130,
+    mobs: [
+      {
+        name: '강화형 파수꾼 산호',
+        level: 270,
+        exp: 2445217,
+        meso: 2025,
+        number_of_mob: 39,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 6,
+    map_region: '오디움',
+    map_name: '점령당한 골목 1',
+    symbol: 160,
+    mobs: [
+      {
+        name: '앵글러 로봇 A형',
+        level: 271,
+        number_of_mob: 34,
+        exp: 2481337,
+        meso: 2032,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 7,
+    map_region: '오디움',
+    map_name: '점령당한 골목 2',
+    symbol: 160,
+    mobs: [
+      {
+        name: '앵글러 로봇 B형',
+        level: 271,
+        number_of_mob: 34,
+        exp: 2481337,
+        meso: 2032,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 8,
+    map_region: '오디움',
+    map_name: '점령당한 골목 3',
+    symbol: 160,
+    mobs: [
+      {
+        name: '앵글러 로봇 B형',
+        level: 271,
+        number_of_mob: 18,
+        exp: 2481337,
+        meso: 2032,
+      },
+      {
+        name: '앵글러 로봇 C형',
+        level: 271,
+        number_of_mob: 19,
+        exp: 2481337,
+        meso: 2032,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 9,
+    map_region: '오디움',
+    map_name: '점령당한 골목 4',
+    symbol: 160,
+    mobs: [
+      {
+        name: '앵글러 로봇 C형',
+        level: 271,
+        number_of_mob: 39,
+        exp: 2481337,
+        meso: 2032,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 10,
+    map_region: '오디움',
+    map_name: '볕 드는 실험실 1',
+    symbol: 180,
+    mobs: [
+      {
+        name: '경비병 강옥',
+        level: 272,
+        number_of_mob: 34,
+        exp: 2516634,
+        meso: 2040,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 11,
+    map_region: '오디움',
+    map_name: '볕 드는 실험실 2',
+    symbol: 180,
+    mobs: [
+      {
+        name: '경비병 강옥',
+        level: 272,
+        number_of_mob: 18,
+        exp: 2516634,
+        meso: 2040,
+      },
+      {
+        name: '경비병 마노',
+        level: 272,
+        number_of_mob: 19,
+        exp: 2516634,
+        meso: 2040,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 12,
+    map_region: '오디움',
+    map_name: '볕 드는 실험실 3',
+    symbol: 180,
+    mobs: [
+      {
+        name: '경비병 마노',
+        level: 272,
+        number_of_mob: 39,
+        exp: 2516634,
+        meso: 2040,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 13,
+    map_region: '오디움',
+    map_name: '잠긴 문 뒤 실험실 1',
+    symbol: 200,
+    mobs: [
+      {
+        name: '무너지는 실험체',
+        level: 273,
+        number_of_mob: 34,
+        exp: 2546149,
+        meso: 2047,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 14,
+    map_region: '오디움',
+    map_name: '잠긴 문 뒤 실험실 2',
+    symbol: 200,
+    mobs: [
+      {
+        name: '무너지는 실험체',
+        level: 273,
+        number_of_mob: 18,
+        exp: 2546149,
+        meso: 2047,
+      },
+      {
+        name: '실패한 피험체',
+        level: 274,
+        number_of_mob: 19,
+        exp: 2582906,
+        meso: 2055,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 15,
+    map_region: '오디움',
+    map_name: '잠긴 문 뒤 실험실 3',
+    symbol: 200,
+    mobs: [
+      {
+        name: '실패한 피험체',
+        level: 274,
+        number_of_mob: 39,
+        exp: 2582906,
+        meso: 2055,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 16,
+    map_region: '오디움',
+    map_name: '잠긴 문 뒤 실험실 4',
+    symbol: 200,
+    mobs: [
+      {
+        name: '실패한 피험체',
+        level: 274,
+        number_of_mob: 39,
+        exp: 2582906,
+        meso: 2055,
+      },
+    ],
+    burning_field: 0,
+  },
+];
+
+export default 오디움;
