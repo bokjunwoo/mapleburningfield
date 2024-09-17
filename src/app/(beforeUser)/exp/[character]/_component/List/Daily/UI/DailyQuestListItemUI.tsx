@@ -27,7 +27,11 @@ const DailyQuestListItemUI = <T extends ExpQuestContent>({
   const isObtainable = characterLevel >= minRegionsLevel[item.region];
 
   return (
-    <ExpListItemUI isCheck={item.checked} warning={item.warning}>
+    <ExpListItemUI
+      isCheck={item.checked}
+      warning={item.warning}
+      isObtainable={isObtainable}
+    >
       <ExpCheckboxUI
         region={item.region}
         isChecked={item.checked}
