@@ -1,4 +1,5 @@
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Script from 'next/script';
 import Footer from './_component/Layout/Footer';
 import Header from './_component/Layout/Header';
@@ -51,6 +52,7 @@ export default function RootLayout({
       />
 
       <body>
+        <SpeedInsights />
         <AppRouterCacheProvider>
           <ClientRoot>
             <Header />
