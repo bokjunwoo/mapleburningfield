@@ -8,7 +8,7 @@ import GoogleAdSense from '../Google/GoogleAd';
 const Footer = () => {
   return (
     <Box width="100%" height="100%">
-      <Box my={3}>
+      <Box my={3} width="100%" height="100%">
         <GoogleAdSense dataAdSlot="2469892538" />
       </Box>
 
