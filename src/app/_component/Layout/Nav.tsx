@@ -4,7 +4,7 @@ import { Container, Box } from '@mui/material';
 import { usePathname } from 'next/navigation';
 import { useRecoilValue } from 'recoil';
 import NavLink from '../Box/Link/NavLink';
-import GoogleFixedAdSense from '../Google/GoogleFixedAd';
+import NavGoogleAd from '../Google/NavGoogleAd';
 import { characterInfoState } from '@/app/atoms/characterInfoState';
 
 const Nav = () => {
@@ -36,11 +36,7 @@ const Nav = () => {
         </Container>
       </Box>
 
-      {pathname !== '/' ? (
-        <Box height={90} mx={2} my={3}>
-          <GoogleFixedAdSense />
-        </Box>
-      ) : null}
+      {pathname !== '/' ? <NavGoogleAd /> : null}
     </Box>
   );
 };
