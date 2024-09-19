@@ -20,7 +20,6 @@ const ErrorPage = ({ title }: Props) => {
       justifyContent="center"
       alignItems="center"
       width="100%"
-      height="80vh"
     >
       <Card
         sx={{
