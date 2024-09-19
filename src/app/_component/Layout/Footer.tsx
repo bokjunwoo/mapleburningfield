@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import { grey } from '@mui/material/colors';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,9 +8,9 @@ import GoogleAdSense from '../Google/GoogleAd';
 const Footer = () => {
   return (
     <Box width="100%" height="100%">
-      <Box mx={2} my={3} height="100%">
+      <Container maxWidth="lg" sx={{ my: 3 }}>
         <GoogleAdSense dataAdSlot="2469892538" />
-      </Box>
+      </Container>
 
       <Box
         component="footer"
