@@ -17,7 +17,7 @@ const GoogleFixedAdSense = () => {
   return (
     <ins
       className="adsbygoogle"
-      style={{ display: 'inline-block', width: '100%', height: '90px' }}
+      style={{ display: 'inline-block', maxWidth: '728px', height: '90px' }}
       data-ad-client="ca-pub-2888163582859915"
       data-ad-slot="3845728978"
     />

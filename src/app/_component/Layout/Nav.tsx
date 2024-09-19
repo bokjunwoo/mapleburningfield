@@ -37,7 +37,7 @@ const Nav = () => {
       </Box>
 
       {pathname !== '/' ? (
-        <Box width="100%" height={90} my={3}>
+        <Box height={90} mx={2} my={3}>
           <GoogleFixedAdSense />
         </Box>
       ) : null}
