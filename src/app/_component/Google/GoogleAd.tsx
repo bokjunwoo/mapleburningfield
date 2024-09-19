@@ -22,7 +22,7 @@ const GoogleAdSense = ({ dataAdSlot }: Props) => {
     <ins
       className="adsbygoogle"
       style={{ display: 'block' }}
-      data-ad-client="ca-pub-3131973401944410"
+      data-ad-client="ca-pub-2888163582859915"
       data-ad-slot={dataAdSlot}
       data-ad-format="auto"
       data-full-width-responsive="true"
