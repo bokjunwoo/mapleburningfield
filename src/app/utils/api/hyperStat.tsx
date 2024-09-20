@@ -1,4 +1,4 @@
-export const findHighestHyperStatLevel = (
+const findHyperStatLevel = (
   data: CharacterHyperStat,
   targetStatType: StatType,
 ) => {
@@ -22,4 +22,21 @@ export const findHighestHyperStatLevel = (
   });
 
   return highestStatLevel;
+};
+
+const hyperStatExpRate = (level: number): number => {
+  if (level <= 10) {
+    return level * 0.5;
+  }
+  return level - 10 + 5;
+};
+
+export const findHyperStatExpRate = (
+  data: CharacterHyperStat,
+  targetStatType: StatType,
+) => {
+  const hyperStatLevel = findHyperStatLevel(data, targetStatType);
+  const expRate = hyperStatExpRate(hyperStatLevel);
+
+  return expRate;
 };
