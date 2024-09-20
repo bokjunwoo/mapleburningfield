@@ -5,7 +5,7 @@ import {
   calculateSolJanusExpRate,
   findHexaCoreLevel,
 } from './api/hexaCoreEquipment';
-import { findHighestHyperStatLevel } from './api/hyperStat';
+import { findHyperStatExpRate } from './api/hyperStat';
 import { findItemEquipmentRates, findTitleExpRate } from './api/itemEquipment';
 import {
   calculateElvenBlessingExpRate,
@@ -141,7 +141,7 @@ export const processCharacterData = ({
   unionRaider,
   unionArtifact,
 }: ProcessCharacterData) => {
-  const expHyperStatLevel = findHighestHyperStatLevel(hyperStat, '획득 경험치');
+  const expHyperStatLevel = findHyperStatExpRate(hyperStat, '획득 경험치');
   const holySymbolCoreLevel = findVCoreLevel(vmatrix, '쓸만한 홀리 심볼');
   const solJanusCoreLevel = findHexaCoreLevel(hexaMatrix, '솔 야누스');
   const loadedDiceExpRate = findLoadedDiceVCoreExpRate(vmatrix);
