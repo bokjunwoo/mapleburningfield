@@ -1,9 +1,11 @@
+'use client';
+
 import { Box, useMediaQuery, useTheme } from '@mui/material';
-import Google350FixedAdSense from './Google350FixedAdSense';
 import Google660FixedAdSense from './Google660FixedAdSense';
 import Google800FixedAdSense from './Google800FixedAdSense';
+import GoogleSmallAdSense from './GoogleSmallAdSense';
 
-const NavGoogleAd = () => {
+const NavGoogleAdSense = () => {
   const theme = useTheme();
 
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
@@ -12,7 +14,7 @@ const NavGoogleAd = () => {
   if (isSmallScreen) {
     return (
       <Box mx={2} my={3}>
-        <Google350FixedAdSense />
+        <GoogleSmallAdSense />
       </Box>
     );
   }
@@ -32,4 +34,4 @@ const NavGoogleAd = () => {
   );
 };
 
-export default NavGoogleAd;
+export default NavGoogleAdSense;
