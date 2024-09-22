@@ -23,7 +23,7 @@ const InputPageContent = () => {
   }, [queryClient, resetData]);
 
   return (
-    <Box>
+    <Box component="main" width="100%" height="100%">
       <NavGoogleAdSense />
 
       <Box component="section" py={3}>

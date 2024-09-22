@@ -18,10 +18,10 @@ export const metadata = {
 
 const NewsPage = () => {
   return (
-    <Box>
+    <Box component="main" width="100%" height="100%">
       <NavGoogleAdSense />
 
-      <Grid container spacing={2}>
+      <Grid container spacing={2} component="section">
         <Grid item xs={12}>
           <Typography mt={3} variant="h5">
             업데이트 내역
@@ -32,7 +32,7 @@ const NewsPage = () => {
           <HistoryAccordion />
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid item xs={12} component="section">
           <Typography mt={3} variant="h5">
             자주 묻는 질문
           </Typography>

@@ -22,6 +22,7 @@ const ErrorPage = ({ title, pathName, navChildren, footerChildren }: Props) => {
       justifyContent="center"
       alignItems="center"
       width="100%"
+      height="100%"
     >
       {navChildren}
       <Card

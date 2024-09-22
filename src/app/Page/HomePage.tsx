@@ -4,7 +4,7 @@ import FooterGoogleAdSense from '../_component/Google/FooterGoogleAdSense';
 
 const HomePage = () => {
   return (
-    <Box>
+    <Box component="main" width="100%" height="100%">
       <Box
         width="100%"
         height="85vh"
