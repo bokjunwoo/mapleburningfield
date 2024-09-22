@@ -4,7 +4,6 @@ import { Container, Box } from '@mui/material';
 import { usePathname } from 'next/navigation';
 import { useRecoilValue } from 'recoil';
 import NavLink from '../Box/Link/NavLink';
-import NavGoogleAd from '../Google/NavGoogleAd';
 import { characterInfoState } from '@/app/atoms/characterInfoState';
 
 const Nav = () => {
@@ -35,8 +34,6 @@ const Nav = () => {
           <NavLink pathname={pathname} value="/news" text="FAQ / 소식" />
         </Container>
       </Box>
-
-      {pathname !== '/' ? <NavGoogleAd /> : null}
     </Box>
   );
 };
