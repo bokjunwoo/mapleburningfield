@@ -6,21 +6,24 @@ import MainSearchFormUI from '../_component/Form/UI/MainSearchFormUI';
 import { errorMessageState } from '../atoms/errorMessageState';
 
 type Props = {
-  title?: string;
+  title: string;
+  pathName: '/character' | '/exp';
+  navChildren: React.ReactNode;
+  footerChildren: React.ReactNode;
 };
 
-const ErrorPage = ({ title }: Props) => {
+const ErrorPage = ({ title, pathName, navChildren, footerChildren }: Props) => {
   const errorMessage = useRecoilValue(errorMessageState);
-
-  const pathName = title === '메할일' ? 'exp' : 'character';
 
   return (
     <Box
       display="flex"
+      flexDirection="column"
       justifyContent="center"
       alignItems="center"
       width="100%"
     >
+      {navChildren}
       <Card
         sx={{
           display: 'flex',
@@ -82,6 +85,8 @@ const ErrorPage = ({ title }: Props) => {
           </Box>
         </Box>
       </Card>
+
+      {footerChildren}
     </Box>
   );
 };
