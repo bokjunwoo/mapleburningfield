@@ -10,7 +10,7 @@ declare global {
   }
 }
 
-const Google350FixedAdSense = () => {
+const GoogleSmallAdSense = () => {
   useEffect(() => {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }, []);
@@ -20,15 +20,14 @@ const Google350FixedAdSense = () => {
       <ins
         className="adsbygoogle"
         style={{
-          display: 'inline-block',
-          width: '350px',
-          height: '90px',
+          display: 'block',
         }}
         data-ad-client="ca-pub-2888163582859915"
         data-ad-slot="7688771069"
+        data-full-width-responsive="true"
       />
     </Box>
   );
 };
 
-export default Google350FixedAdSense;
+export default GoogleSmallAdSense;
