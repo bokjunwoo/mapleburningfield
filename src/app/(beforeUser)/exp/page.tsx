@@ -1,3 +1,5 @@
+import FooterGoogleAdSense from '@/app/_component/Google/FooterGoogleAdSense';
+import NavGoogleAdSense from '@/app/_component/Google/NavGoogleAdSense';
 import ErrorPage from '@/app/Page/ErrorPage';
 
 export const metadata = {
@@ -12,7 +14,14 @@ export const metadata = {
 };
 
 const CharacterPage = async () => {
-  return <ErrorPage title="메할일" />;
+  return (
+    <ErrorPage
+      title="메할일"
+      pathName="/exp"
+      navChildren={<NavGoogleAdSense />}
+      footerChildren={<FooterGoogleAdSense />}
+    />
+  );
 };
 
 export default CharacterPage;

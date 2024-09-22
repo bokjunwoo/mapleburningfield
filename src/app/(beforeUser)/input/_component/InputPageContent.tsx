@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import CharacterLevelInput from './Form/CharacterLevelInput';
 import RateContent from '@/app/_component/Content/RateContent';
 import RegionContent from '@/app/_component/Content/RegionContent';
+import FooterGoogleAdSense from '@/app/_component/Google/FooterGoogleAdSense';
+import NavGoogleAdSense from '@/app/_component/Google/NavGoogleAdSense';
 import AreaTab from '@/app/_component/Tab/AreaTab';
 import RegionTabUI from '@/app/_component/Tab/UI/RegionTabUI';
 
@@ -18,6 +20,8 @@ const InputPageContent = () => {
 
   return (
     <Box>
+      <NavGoogleAdSense />
+
       <Box component="section" py={3}>
         <CharacterLevelInput />
       </Box>
@@ -34,6 +38,8 @@ const InputPageContent = () => {
       <Box component="section">
         <RegionContent />
       </Box>
+
+      <FooterGoogleAdSense />
     </Box>
   );
 };
