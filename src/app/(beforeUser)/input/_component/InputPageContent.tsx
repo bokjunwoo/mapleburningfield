@@ -10,13 +10,17 @@ import FooterGoogleAdSense from '@/app/_component/Google/FooterGoogleAdSense';
 import NavGoogleAdSense from '@/app/_component/Google/NavGoogleAdSense';
 import AreaTab from '@/app/_component/Tab/AreaTab';
 import RegionTabUI from '@/app/_component/Tab/UI/RegionTabUI';
+import useCharacterData from '@/app/atoms/useCharacterData';
 
 const InputPageContent = () => {
   const queryClient = useQueryClient();
 
+  const { resetData } = useCharacterData('');
+
   useEffect(() => {
     queryClient.clear();
-  }, [queryClient]);
+    resetData();
+  }, [queryClient, resetData]);
 
   return (
     <Box>
