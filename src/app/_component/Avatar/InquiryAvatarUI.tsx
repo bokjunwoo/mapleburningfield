@@ -8,7 +8,7 @@ const InquiryAvatarUI = () => {
       spacing={5}
       display="flex"
       alignItems="center"
-      my={1}
+      mb={1}
     >
       <Link href="https://open.kakao.com/me/burningfield" target="_blank">
         <Avatar
