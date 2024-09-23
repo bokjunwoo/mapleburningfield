@@ -17,7 +17,7 @@ const CharacterPage = async () => {
   return (
     <ErrorPage
       title="사냥 정보"
-      pathName="/character"
+      pathName="character"
       navChildren={<NavGoogleAdSense />}
       footerChildren={<FooterGoogleAdSense />}
     />

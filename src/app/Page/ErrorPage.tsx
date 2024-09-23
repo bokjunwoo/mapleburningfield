@@ -7,7 +7,7 @@ import { errorMessageState } from '../atoms/errorMessageState';
 
 type Props = {
   title: string;
-  pathName: '/character' | '/exp';
+  pathName: 'character' | 'exp';
   navChildren: React.ReactNode;
   footerChildren: React.ReactNode;
 };
