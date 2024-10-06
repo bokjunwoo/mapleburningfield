@@ -64,3 +64,14 @@ export const extractWord = (text: string, index: number): string => {
   const words = text.split(/\s+/);
   return words[index] || '';
 };
+
+export const getTodayDate = () => {
+  const today = new Date();
+  return today.toISOString().split('T')[0];
+};
+
+export const getYesterdayDate = () => {
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  return yesterday.toISOString().split('T')[0];
+};
