@@ -2,7 +2,6 @@ import { Box, Container, Typography } from '@mui/material';
 import { grey } from '@mui/material/colors';
 import MainSearchFormUI from '../_component/Form/UI/MainSearchFormUI';
 import FooterGoogleAdSense from '../_component/Google/FooterGoogleAdSense';
-import CharacterRankGrudUI from '../_component/Grid/CharacterRankGrudUI';
 
 const HomePage = () => {
   return (
@@ -63,8 +62,6 @@ const HomePage = () => {
           </Container>
         </Box>
       </Box>
-
-      <CharacterRankGrudUI />
 
       <FooterGoogleAdSense />
     </Box>
