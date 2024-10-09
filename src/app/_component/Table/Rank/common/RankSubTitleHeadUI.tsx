@@ -1,20 +1,9 @@
 'use client';
 
-import {
-  TableHead,
-  TableRow,
-  TableCell,
-  Box,
-  Typography,
-  useTheme,
-  useMediaQuery,
-} from '@mui/material';
+import { TableHead, TableRow, TableCell, Box, Typography } from '@mui/material';
 import { red, yellow } from '@mui/material/colors';
 
 const RankSubTitleHeadUI = () => {
-  const theme = useTheme();
-  const isMediumScreen = useMediaQuery(theme.breakpoints.down('md'));
-
   return (
     <TableHead sx={{ bgcolor: yellow[100] }}>
       <TableRow>

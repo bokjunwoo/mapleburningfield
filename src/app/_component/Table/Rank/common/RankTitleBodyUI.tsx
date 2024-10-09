@@ -1,9 +1,9 @@
-import { REQUIRED_LEVEL_EXP } from '@/app/constants/level';
-import { truncateToFixed } from '@/app/utils/format';
-import { calculateExpPercentage } from '@/app/utils/mob';
 import { TableRow, TableCell, Box, Avatar, Typography } from '@mui/material';
 import { red } from '@mui/material/colors';
 import Link from 'next/link';
+import { REQUIRED_LEVEL_EXP } from '@/app/constants/level';
+import { truncateToFixed } from '@/app/utils/format';
+import { calculateExpPercentage } from '@/app/utils/mob';
 
 type Props = {
   item: Ranking;
@@ -36,13 +36,10 @@ const RankTitleBodyUI = ({ item, previousItem }: Props) => {
     if (levelDifference === 0) {
       const expDifference = item.character_exp - previousItem.character_exp;
       return calculateExpPercentage(item.character_level, expDifference);
-    } else {
-      const additionalPercentage =
-        levelDifference > 1 ? levelDifference * 100 : 0;
-      return (
-        remainingExpPercentage + additionalPercentage + currentExpPercentage
-      );
     }
+    const additionalPercentage =
+      levelDifference > 1 ? levelDifference * 100 : 0;
+    return remainingExpPercentage + additionalPercentage + currentExpPercentage;
   };
 
   const aaass = calculateExpChangePercentage();

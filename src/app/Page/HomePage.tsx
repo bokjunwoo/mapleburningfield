@@ -1,13 +1,15 @@
 import { Box, Container, Typography } from '@mui/material';
+import { grey } from '@mui/material/colors';
 import MainSearchFormUI from '../_component/Form/UI/MainSearchFormUI';
 import FooterGoogleAdSense from '../_component/Google/FooterGoogleAdSense';
+import CharacterRankGrudUI from '../_component/Grid/CharacterRankGrudUI';
 
 const HomePage = () => {
   return (
-    <Box component="main" width="100%" height="100%">
+    <Box component="main" width="100%" height="100%" bgcolor={grey[100]}>
       <Box
         width="100%"
-        height="85vh"
+        height="100vh"
         display="flex"
         flexDirection="column"
         alignItems="center"
@@ -61,6 +63,8 @@ const HomePage = () => {
           </Container>
         </Box>
       </Box>
+
+      <CharacterRankGrudUI />
 
       <FooterGoogleAdSense />
     </Box>
