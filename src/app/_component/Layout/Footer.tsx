@@ -18,18 +18,36 @@ const Footer = () => {
       >
         <Box px={2} display="flex" flexDirection="column" alignItems="center">
           <InquiryAvatarUI />
+
           <Typography variant="body2" color="inherit" mb={3} fontSize={13}>
             오류제보 | 개선사항 | 문의사항 | mapleburningfield@gmail.com
           </Typography>
-          <Typography
-            variant="body2"
-            color="inherit"
-            component="p"
-            mb={0.5}
-            fontSize={13}
-          >
-            &copy; 2024 버닝필드. All rights reserved.
-          </Typography>
+
+          <Box display="flex" alignItems="center" mb={0.5}>
+            <Typography
+              variant="body2"
+              color="inherit"
+              component="p"
+              mr={0.5}
+              fontSize={13}
+            >
+              With.
+            </Typography>
+            <Link
+              href="https://partners.maplestory.nexon.com/developers"
+              target="_blank"
+              style={{ height: 15 }}
+            >
+              <Image
+                src="/images/partners_maplestory.png"
+                width={215}
+                height={15}
+                alt="partners_maplestory"
+                style={{ alignSelf: 'flex-end' }}
+              />
+            </Link>
+          </Box>
+
           <Box display="flex" alignItems="center" mb={0.5}>
             <Typography
               variant="body2"
@@ -43,8 +61,8 @@ const Footer = () => {
             <Link href="https://openapi.nexon.com/ko/" target="_blank">
               <Image
                 src="/images/nexon_open_api.svg"
-                width={215}
-                height={13}
+                width={180}
+                height={11}
                 alt="nexon_open_api"
               />
             </Link>
@@ -55,8 +73,18 @@ const Footer = () => {
             color="inherit"
             component="p"
             fontSize={13}
+            mb={0.5}
           >
             This site is not associated with NEXON Korea.
+          </Typography>
+
+          <Typography
+            variant="body2"
+            color="inherit"
+            component="p"
+            fontSize={13}
+          >
+            &copy; 2024 버닝필드. All rights reserved.
           </Typography>
         </Box>
       </Box>
