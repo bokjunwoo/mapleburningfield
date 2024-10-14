@@ -41,8 +41,8 @@ const ExpRadioFormUI = ({ title, value, handleChange, children }: Props) => {
         value={value}
         onChange={handleChange}
         row
-        aria-labelledby="epic_dungeon_controlled_radio_buttons_group"
-        name="epic_dungeon"
+        aria-labelledby={`${title}_controlled_radio_buttons_group`}
+        name={title}
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
