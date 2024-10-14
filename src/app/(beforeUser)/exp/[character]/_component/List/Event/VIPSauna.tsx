@@ -1,7 +1,7 @@
 import { SelectChangeEvent } from '@mui/material';
 import { useEffect, useMemo, useState } from 'react';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
-import EventExpMapUI from './UI/EventExpMapUI';
+import VIPSaunaUI from './UI/VIPSaunaUI';
 import {
   expectedExpMultiplier,
   expectedExpRegionState,
@@ -10,7 +10,6 @@ import { REGEX } from '@/app/constants/constants';
 import { EXP_CONTENT } from '@/app/constants/rate';
 import useValidatedInput from '@/app/hooks/useValidatedInput';
 import { calculateEventMapExp } from '@/app/utils/exp';
-import VIPSaunaUI from './UI/VIPSaunaUI';
 
 const VIPSauna = ({ characterLevel }: CharacterLevelProps) => {
   const setExpectedExpRegion = useSetRecoilState<
@@ -40,15 +39,18 @@ const VIPSauna = ({ characterLevel }: CharacterLevelProps) => {
 
   const countValue = calculateCountValue(inputValue, selectValue);
 
-  const expectedExpRegionList: ExpectedExpRegion<VIPSaunaRegion>[] = [
-    {
-      region: '이용권 사용',
-      exp: eventMapExp.usedExp,
-      count: countValue,
-      checked: expMultiplier === '이용권 사용',
-      warning: false,
-    },
-  ];
+  const expectedExpRegionList: ExpectedExpRegion<VIPSaunaRegion>[] =
+    useMemo(() => {
+      return [
+        {
+          region: '이용권 사용',
+          exp: eventMapExp.usedExp,
+          count: countValue,
+          checked: expMultiplier === '이용권 사용',
+          warning: false,
+        },
+      ];
+    }, [eventMapExp, expMultiplier, countValue]);
 
   useEffect(() => {
     setExpectedExpRegion(expectedExpRegionList);
