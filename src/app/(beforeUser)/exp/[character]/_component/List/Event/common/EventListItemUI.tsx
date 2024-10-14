@@ -3,9 +3,10 @@ import { grey } from '@mui/material/colors';
 
 type Props = {
   children: React.ReactNode;
+  bgcolor?: string;
 };
 
-const EventListItemUI = ({ children }: Props) => {
+const EventListItemUI = ({ bgcolor = grey[200], children }: Props) => {
   return (
     <ListItem
       disablePadding
@@ -14,7 +15,7 @@ const EventListItemUI = ({ children }: Props) => {
         border: `1px solid ${grey[400]}`,
         borderRadius: 1,
         mt: 0.5,
-        bgcolor: grey[200],
+        bgcolor,
         display: 'flex',
         flexDirection: 'column',
       }}
