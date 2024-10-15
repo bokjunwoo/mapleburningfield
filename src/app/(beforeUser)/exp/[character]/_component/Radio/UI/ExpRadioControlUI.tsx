@@ -7,9 +7,15 @@ type Props = {
   value: string;
   label: string;
   isSelected: boolean;
+  disabled?: boolean;
 };
 
-const ExpRadioControlUI = ({ value, label, isSelected }: Props) => (
+const ExpRadioControlUI = ({
+  value,
+  label,
+  isSelected,
+  disabled = false,
+}: Props) => (
   <FormControlLabel
     value={value}
     control={
@@ -47,6 +53,7 @@ const ExpRadioControlUI = ({ value, label, isSelected }: Props) => (
         color: isSelected ? grey[100] : grey[400],
       },
     }}
+    disabled={disabled}
   />
 );
 
