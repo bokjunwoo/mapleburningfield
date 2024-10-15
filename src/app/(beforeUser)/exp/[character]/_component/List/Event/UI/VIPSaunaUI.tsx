@@ -32,7 +32,11 @@ const VIPSaunaUI = ({
   const [expMultiplier, handleExpMultiplierChange] = useRadio(title);
 
   return (
-    <ExpContentListUI title={title} characterLevel={characterLevel}>
+    <ExpContentListUI
+      title={title}
+      characterLevel={characterLevel}
+      icon="VIP 사우나"
+    >
       <VIPSaunaRadioUI
         value={expMultiplier}
         handleChange={handleExpMultiplierChange}
