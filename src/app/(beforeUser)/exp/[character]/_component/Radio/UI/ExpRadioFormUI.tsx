@@ -1,5 +1,5 @@
 import { FormControl, FormLabel, RadioGroup } from '@mui/material';
-import { blueGrey, grey } from '@mui/material/colors';
+import { blueGrey } from '@mui/material/colors';
 
 type Props = {
   title: string;
@@ -18,7 +18,6 @@ const ExpRadioFormUI = ({ title, value, handleChange, children }: Props) => {
         mt: 0.5,
         px: 1.5,
         pt: 0.5,
-        borderBottom: `1px solid ${grey[300]}`,
         borderRadius: 1,
       }}
     >
