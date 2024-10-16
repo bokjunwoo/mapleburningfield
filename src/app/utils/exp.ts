@@ -202,3 +202,34 @@ export const calculateEventMapExp = (
 
   return { usedExp, unusedExp };
 };
+
+const calculateBasicEXPCoupon = (exp: number) => {
+  const result = Math.ceil((exp * 75) / 1000) * 1000;
+  return result;
+};
+
+const calculateAdvancedEXPCoupon = (exp: number) => {
+  const result = Math.ceil((exp * 225) / 1000) * 1000;
+  return result;
+};
+
+export const calculateEXPCoupon = (
+  characterLevel: number,
+): { basicExp: number; advancedExp: number } => {
+  let basicExp = 0;
+  let advancedExp = 0;
+
+  if (characterLevel >= 260) {
+    basicExp = 76572000;
+
+    if (characterLevel > 289) {
+      advancedExp = calculateAdvancedEXPCoupon(MOB_BASE_EXP[290]);
+    } else {
+      advancedExp = calculateAdvancedEXPCoupon(MOB_BASE_EXP[characterLevel]);
+    }
+  } else {
+    basicExp = calculateBasicEXPCoupon(MOB_BASE_EXP[characterLevel]);
+  }
+
+  return { basicExp, advancedExp };
+};
