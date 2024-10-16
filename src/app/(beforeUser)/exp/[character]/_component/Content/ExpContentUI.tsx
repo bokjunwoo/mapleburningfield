@@ -7,8 +7,10 @@ import { useRecoilState } from 'recoil';
 import AraneRiverQuest from '../List/Daily/AraneRiverQuest';
 import GrandisQuestList from '../List/Daily/GrandisQuestList';
 import MonsterPark from '../List/Daily/MonsterPark';
-import EventExpMap from '../List/Event/EventExpMap';
+import EXPCoupon from '../List/Event/EXPCoupon';
+import VIPSauna from '../List/Event/VIPSauna';
 import AraneRiverWeeklyQuest from '../List/Weekly/AraneRiverWeeklyQuest';
+import AzmothCanyon from '../List/Weekly/AzmothCanyon';
 import EpicDungeon from '../List/Weekly/EpicDungeon';
 import BannerTitle from '@/app/_component/Typography/BannerTitle';
 import { characterInfoState } from '@/app/atoms/characterInfoState';
@@ -53,23 +55,50 @@ const ExpContentUI = () => {
       </Grid>
 
       <Grid container spacing={1} mb={-0.5}>
-        <Grid item xs={12} lg={8}>
+        <Grid item xs={12}>
           <BannerTitle text="주간컨텐츠" mt={0.5} mb={0} />
-          <Grid container spacing={1}>
-            <Grid item xs={12} lg={6}>
-              <AraneRiverWeeklyQuest characterLevel={characterLevel} />
-            </Grid>
-            <Grid item xs={12} lg={6}>
-              <EpicDungeon characterLevel={characterLevel} />
-            </Grid>
-          </Grid>
-        </Grid>
+          {isHighLevelCharacter ? (
+            <Grid container spacing={1}>
+              <Grid item xs={12} lg={4}>
+                <EpicDungeon characterLevel={characterLevel} />
+              </Grid>
 
-        <Grid item xs={12} lg={4}>
+              <Grid item xs={12} lg={4}>
+                <AzmothCanyon characterLevel={characterLevel} />
+              </Grid>
+
+              <Grid item xs={12} lg={4}>
+                <AraneRiverWeeklyQuest characterLevel={characterLevel} />
+              </Grid>
+            </Grid>
+          ) : (
+            <Grid container spacing={1}>
+              <Grid item xs={12} lg={4}>
+                <AraneRiverWeeklyQuest characterLevel={characterLevel} />
+              </Grid>
+
+              <Grid item xs={12} lg={4}>
+                <EpicDungeon characterLevel={characterLevel} />
+              </Grid>
+
+              <Grid item xs={12} lg={4}>
+                <AzmothCanyon characterLevel={characterLevel} />
+              </Grid>
+            </Grid>
+          )}
+        </Grid>
+      </Grid>
+
+      <Grid container spacing={1} mb={-0.5}>
+        <Grid item xs={12}>
           <BannerTitle text="이벤트 컨텐츠" mt={0.5} mb={0} />
           <Grid container spacing={1}>
-            <Grid item xs={12}>
-              <EventExpMap characterLevel={characterLevel} />
+            <Grid item xs={12} lg={4}>
+              <VIPSauna characterLevel={characterLevel} />
+            </Grid>
+
+            <Grid item xs={12} lg={4}>
+              <EXPCoupon characterLevel={characterLevel} />
             </Grid>
           </Grid>
         </Grid>
