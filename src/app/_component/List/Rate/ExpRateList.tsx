@@ -1,5 +1,6 @@
 import RateGridUI from '../../Grid/RateGridUI';
 import AccumulationPotion from './Exp/AccumulationPotion';
+import AzmothPotion from './Exp/AzmothPotion';
 import BoostRing from './Exp/BoostRing';
 import ElvenBlessing from './Exp/ElvenBlessing';
 import ExpCoupon from './Exp/ExpCoupon';
@@ -34,6 +35,7 @@ const ExpRateList = () => {
         ExtremeGoldPotion,
         AccumulationPotion,
         VIPCoupon,
+        AzmothPotion,
         ExpPcRoom,
       ],
       bgcolor: listRGB.blue,
@@ -47,6 +49,7 @@ const ExpRateList = () => {
         ExpTitle,
         ExpTallahartSymbol,
         EmptyRateListItemUI,
+        EmptyRateListItemUI,
       ],
       bgcolor: listRGB.green,
     },
@@ -58,6 +61,7 @@ const ExpRateList = () => {
         UnionZero,
         HyperStat,
         ElvenBlessing,
+        EmptyRateListItemUI,
         EmptyRateListItemUI,
       ],
       bgcolor: listRGB.orange,
@@ -71,6 +75,7 @@ const ExpRateList = () => {
         ExpShowDown,
         ExpEventStat,
         ExpEtc,
+        EmptyRateListItemUI,
       ],
       bgcolor: listRGB.purple,
     },

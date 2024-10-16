@@ -22,6 +22,7 @@ const MesoDropRateList = () => {
         EmptyRateListItemUI,
         EmptyRateListItemUI,
         EmptyRateListItemUI,
+        EmptyRateListItemUI,
       ],
       bgcolor: listRGB.blue,
     },
@@ -30,6 +31,7 @@ const MesoDropRateList = () => {
       Components: [
         MesoDropItemEquipment,
         MesoDropTallahartSymbol,
+        EmptyRateListItemUI,
         EmptyRateListItemUI,
         EmptyRateListItemUI,
         EmptyRateListItemUI,
@@ -46,6 +48,7 @@ const MesoDropRateList = () => {
         EmptyRateListItemUI,
         EmptyRateListItemUI,
         EmptyRateListItemUI,
+        EmptyRateListItemUI,
       ],
       bgcolor: listRGB.orange,
     },
@@ -54,6 +57,7 @@ const MesoDropRateList = () => {
       Components: [
         Greed,
         MesoDropEtc,
+        EmptyRateListItemUI,
         EmptyRateListItemUI,
         EmptyRateListItemUI,
         EmptyRateListItemUI,

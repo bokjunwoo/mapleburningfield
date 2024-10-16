@@ -1,4 +1,5 @@
 import AccumulationPotion from './Preset/AccumulationPotion';
+import AzmothPotion from './Preset/AzmothPotion';
 import ExpCoupon from './Preset/ExpCoupon';
 import ExpPcRoom from './Preset/ExpPCroom';
 import ExtremeGoldPotion from './Preset/ExtremeGoldPotion';
@@ -20,6 +21,7 @@ const PresetRateList = () => {
         ExtremeGoldPotion,
         AccumulationPotion,
         VIPCoupon,
+        AzmothPotion,
         ExpPcRoom,
       ],
       bgcolor: listRGB.blue,
