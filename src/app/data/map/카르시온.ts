@@ -166,7 +166,7 @@ const 카르시온: RegionInfo[] = [
     symbol: 460,
     mobs: [
       {
-        name: '심염의 사냥꾼',
+        name: '심연의 사냥꾼',
         level: 288,
         number_of_mob: 40,
         exp: 4217526,

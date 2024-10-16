@@ -2,7 +2,7 @@ import InputPageContent from './_component/InputPageContent';
 
 export const metadata = {
   metadataBase: new URL('https://mapleburningfield.com/'),
-  title: 'FAQ/소식 | 버닝필드',
+  title: '직접입력 | 버닝필드',
   description: 'FAQ',
   openGraph: {
     title: '직접입력 - 사냥터 정보 | 버닝필드',
