@@ -47,6 +47,11 @@ export const EPIC_DUNGEON_MIN_REGIONS_LEVEL: RegionLevelMap<EpicDungeonRegion> =
     앵글러컴퍼니: 270,
   };
 
+export const EXP_COUPON_MIN_REGIONS_LEVEL: RegionLevelMap<EXPCouponRegion> = {
+  '기본 EXP 교환권': 200,
+  '상급 EXP 교환권': 260,
+};
+
 export const EPIC_DUNGEON_EXP: RequiredLevelExp = {
   260: 194600000000,
   261: 197400000000,
