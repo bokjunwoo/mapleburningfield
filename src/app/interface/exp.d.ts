@@ -57,6 +57,10 @@ type EventMapRegion = '참여 X' | '햇살 사용' | '햇살 미사용';
 
 type VIPSaunaRegion = '이용권 미사용' | '이용권 사용';
 
+type EXPCouponRegion = '상급 EXP 교환권' | '기본 EXP 교환권';
+
+type AzmothCanyonRegion = '경험치' | '골드 주화' | '아즈모스 코인';
+
 type ExpContentTitle =
   | '아케인리버 일일퀘스트'
   | '아케인리버 주간퀘스트'
@@ -65,7 +69,9 @@ type ExpContentTitle =
   | '에픽던전'
   | '펀치킹(비밀 기록 탈환)'
   | '잠수맵(견습 로봇 놀이터)'
-  | 'VIP 사우나(잠수맵)';
+  | 'VIP 사우나(잠수맵)'
+  | 'EXP 교환권'
+  | '아즈모스 협곡';
 
 type ExpContentType = {
   ARANE_RIVER_DAILY_QUEST: '아케인리버 일일퀘스트';
@@ -76,6 +82,8 @@ type ExpContentType = {
   EVENT_PUNCHKING: '펀치킹(비밀 기록 탈환)';
   EVENT_MAP: '잠수맵(견습 로봇 놀이터)';
   VIP_SAUNA: 'VIP 사우나(잠수맵)';
+  EXP_COUPON: 'EXP 교환권';
+  AZMOTH_CANYON: '아즈모스 협곡';
 };
 
 type ExpQuestContent =

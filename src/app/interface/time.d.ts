@@ -9,4 +9,4 @@ interface MobCalculateTimeOption {
 
 type TimeUnit = '분' | '시간';
 
-type VIPSaunaUnit = '분' | '장'
+type VIPSaunaUnit = '분' | '장';

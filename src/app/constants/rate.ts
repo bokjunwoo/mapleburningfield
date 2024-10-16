@@ -1,6 +1,7 @@
 export const RATE_NAME = {
   ABILITY: 'ability',
   ACCUMULATION_POTION: 'accumulation_potion',
+  AZMOTH_POTION: 'azmoth_potion',
   BOOST_RING: 'boost_ring',
   ELVEN_BLESSING: 'elven_blessing',
   ETC_EXP: 'etc_exp',
@@ -46,6 +47,9 @@ export const EXP_CONTENT: ExpContentType = {
   EPIC_DUNGEON: '에픽던전',
   EVENT_PUNCHKING: '펀치킹(비밀 기록 탈환)',
   EVENT_MAP: '잠수맵(견습 로봇 놀이터)',
+  VIP_SAUNA: 'VIP 사우나(잠수맵)',
+  EXP_COUPON: 'EXP 교환권',
+  AZMOTH_CANYON: '아즈모스 협곡',
 };
 
 export const TALLAHART_SYMBOL_EXP_ITEMS: SelectItem[] = [
