@@ -25,6 +25,10 @@ const AzmothCanyonSliderStyle = styled(Slider)({
   '& .MuiSlider-markLabel': {
     color: '#F5F0CB',
     fontSize: 12,
+    transform: 'translate(-50%, -10%)',
+    '&[data-index="4"]': {
+      transform: 'translate(-90%, -10%)',
+    },
   },
 });
 
