@@ -1,5 +1,6 @@
 import { Box, Container, Typography } from '@mui/material';
-import { grey } from '@mui/material/colors';
+import { grey, yellow } from '@mui/material/colors';
+import Link from 'next/link';
 import MainSearchFormUI from '../_component/Form/UI/MainSearchFormUI';
 import FooterGoogleAdSense from '../_component/Google/FooterGoogleAdSense';
 
@@ -50,6 +51,17 @@ const HomePage = () => {
               </Box>
 
               <Box>
+                <Link href="/news">
+                  <Typography
+                    variant="body2"
+                    fontSize={14}
+                    mb={1}
+                    color={yellow[400]}
+                    textAlign="center"
+                  >
+                    ❖ 10/17 신규 업데이트 안내
+                  </Typography>
+                </Link>
                 <Typography variant="body2" fontSize={12} mb={1} color="white">
                   ❖ 200레벨 이상, 5차전직이 완료된 캐틱터만 이용가능합니다.
                 </Typography>
