@@ -233,3 +233,48 @@ export const calculateEXPCoupon = (
 
   return { basicExp, advancedExp };
 };
+
+export const calculateAzmothCanyonExp = (characterLevel: number): number => {
+  let baseLevel = characterLevel;
+
+  if (characterLevel > 289) {
+    baseLevel = 289;
+  }
+  const baseExp = MOB_BASE_EXP[baseLevel];
+
+  const result = Math.floor((baseExp * 4.51111111111) / 1000) * 1000;
+
+  return result;
+};
+
+export const calculateAzmothCanyonBonusDiff = (value: number) => {
+  let mapleGoldCoin = 0;
+  let azmothCoin = 0;
+
+  if (value <= 500) {
+    return { mapleGoldCoin, azmothCoin };
+  }
+
+  const baseValue = Math.floor((value - 500) / 500);
+  mapleGoldCoin = baseValue * 3 + 3;
+  azmothCoin = baseValue * 25 + 25;
+
+  return { mapleGoldCoin, azmothCoin };
+};
+
+export const calculateAzmothCoin = (value: number): number => {
+  let azmothCoin = 0;
+
+  if (value < 500) {
+    return azmothCoin;
+  }
+
+  azmothCoin += 250;
+
+  if (value > 500) {
+    const extraPoints = value - 500;
+    azmothCoin += Math.floor(extraPoints / 10);
+  }
+
+  return azmothCoin;
+};
