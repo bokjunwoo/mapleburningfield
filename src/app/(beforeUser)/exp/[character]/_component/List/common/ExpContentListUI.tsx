@@ -34,7 +34,11 @@ const ExpContentListUI = ({ title, characterLevel, children, icon }: Props) => {
               variant="rounded"
               src={`/images/title_icon/${icon || extractWord(title, 0)}.png`}
               alt={title}
-              sx={{ width: 22, height: 22 }}
+              sx={{
+                width: 22,
+                height: 22,
+                mt: icon === 'EXP 교환권' ? 0.7 : 0,
+              }}
             />
             <Typography
               variant="h6"

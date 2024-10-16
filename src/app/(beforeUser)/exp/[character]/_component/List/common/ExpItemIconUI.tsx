@@ -23,7 +23,7 @@ const ExpItemIconUI = ({ region, folder, warning = false }: Props) => {
     return (
       <Avatar
         alt="Remy Sharp"
-        variant="rounded"
+        variant="square"
         src={`/images/${folder}/${image}.png`}
         sx={{ width: 20, height: 20, mt: -1.2, mr: 0.5, ml: -0.5 }}
       />
@@ -33,9 +33,18 @@ const ExpItemIconUI = ({ region, folder, warning = false }: Props) => {
   return (
     <Avatar
       alt="Remy Sharp"
-      variant="rounded"
+      variant="square"
       src={`/images/${folder}/${image}.png`}
-      sx={{ width: 20, height: 20, mr: 0.5, ml: -0.5 }}
+      sx={{
+        width: 20,
+        height: 20,
+        mr: 0.5,
+        ml: -0.5,
+        mt:
+          image === '상급 EXP 교환권' || image === '기본 EXP 교환권'
+            ? 0.7
+            : undefined,
+      }}
     />
   );
 };
