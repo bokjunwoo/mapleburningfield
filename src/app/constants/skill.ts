@@ -15,7 +15,7 @@ export const EVENT_SKILL_INFO: SkillInfo = {
 export const BOOSTER_INFO: SkillInfo = {
   ICON: 'booster',
   NAME: 'VIP 부스터',
-  DATE: '2024.08.13 ~ 2024.10.16',
+  DATE: '2024.10.17 ~ 2024.12.18',
   MAIN_DESCRIPTION:
     '부스터 몹젠(5.5초 + 서버랙)마다 10마리씩 젠되며 최대 15마리를 넘지 않습니다',
   TIME_DESCRIPTION: '캐릭터당 일일 10회',
