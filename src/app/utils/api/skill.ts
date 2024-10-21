@@ -1,4 +1,5 @@
 import { extractValue } from '../format';
+import { EVENT_BUFF_SKILL_NAME } from '@/app/constants/skill';
 
 export const findHolySymbolSkillExpRate = (data: CharacterSkill) => {
   const holySymbolSkill = data.character_skill.find(
@@ -66,7 +67,8 @@ export const findShowDownSkillHyperPassiveRates = (
 
 export const findEventSkillBuff = (data: CharacterSkill) => {
   const eventSkill = data.character_skill.find(
-    (skill) => skill.skill_name === '고브의 선물' && skill.skill_level > 0,
+    (skill) =>
+      skill.skill_name === EVENT_BUFF_SKILL_NAME && skill.skill_level > 0,
   );
 
   if (!eventSkill)

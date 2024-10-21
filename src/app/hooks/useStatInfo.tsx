@@ -7,7 +7,7 @@ import {
 } from '../atoms/mapContentState';
 import { totalMesoDropRateSelector } from '../atoms/mesoDropState';
 import { portalState } from '../atoms/portalState';
-import { EVENT_BUFF_STAT } from '../constants/portal';
+import { EVENT_BUFF_SKILL_NAME } from '../constants/skill';
 import { expByEventBuffLevel } from '../utils/portal';
 import usePortalBuffInfo from './usePortalBuffInfo';
 
@@ -109,7 +109,7 @@ const useStatInfo = (mapInfo: MapInfo) => {
   };
 
   const portalEventBuffRateInfo: StatCountButtonItem = {
-    label: EVENT_BUFF_STAT,
+    label: EVENT_BUFF_SKILL_NAME,
     iconName: 'buff',
     count: state.eventBuffLevel,
     increment,

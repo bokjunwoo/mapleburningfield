@@ -3,6 +3,7 @@
 import RateSelectListItemUI from '../UI/RateSelectListItemUI';
 import { expRateState, expRateSelector } from '@/app/atoms/expRateState';
 import { RATE_NAME } from '@/app/constants/rate';
+import { EVENT_BUFF_SKILL_NAME } from '@/app/constants/skill';
 import useRateSelect from '@/app/hooks/useRateSelcet';
 
 const ExpEventStat = () => {
@@ -13,7 +14,7 @@ const ExpEventStat = () => {
   });
 
   const rateOption: SelectMenuItem = {
-    label: '이벤트 버프(마약)',
+    label: `${EVENT_BUFF_SKILL_NAME}(마약)`,
     key: RATE_NAME.EXP_EVENT_STAT,
     items: [
       { value: 0, label: '미적용' },
