@@ -20,5 +20,3 @@ export const PORTAL_EXP_MULTIPLIER = {
   INFERNO_WOLF_EXTREME: 1600,
   INFERNO_WOLF_CHAOS: 1200,
 };
-
-export const EVENT_BUFF_STAT = '고브의 축복';

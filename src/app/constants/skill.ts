@@ -25,3 +25,5 @@ export const BOOSTER_INFO: SkillInfo = {
   INITIAL_MOB_KILL: 180,
   ACTIVATION_COUNT: 10,
 };
+
+export const EVENT_BUFF_SKILL_NAME = '차원 너머의 힘';
