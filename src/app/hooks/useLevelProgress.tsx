@@ -28,8 +28,16 @@ const useLevelProgress = (initialLevel: number, initialExp: number) => {
     totalExpectedExpSelector(EXP_CONTENT.EVENT_PUNCHKING),
   );
 
-  const eventMapExp = useRecoilValue(
-    totalExpectedExpSelector(EXP_CONTENT.EVENT_MAP),
+  const VIPSaunaExp = useRecoilValue(
+    totalExpectedExpSelector(EXP_CONTENT.VIP_SAUNA),
+  );
+
+  const azmothCanyonTotalExp = useRecoilValue(
+    totalExpectedExpSelector(EXP_CONTENT.AZMOTH_CANYON),
+  );
+
+  const EXPCouponTotalExp = useRecoilValue(
+    totalExpectedExpSelector(EXP_CONTENT.EXP_COUPON),
   );
 
   const totalExpectedExp =
@@ -39,7 +47,9 @@ const useLevelProgress = (initialLevel: number, initialExp: number) => {
     monsterParkTotalExp +
     epicDungeonTotalExp +
     punchkingTotalExp +
-    eventMapExp;
+    VIPSaunaExp +
+    azmothCanyonTotalExp +
+    EXPCouponTotalExp;
 
   let level = initialLevel;
   let remainingExp = initialExp + totalExpectedExp;
@@ -57,7 +67,9 @@ const useLevelProgress = (initialLevel: number, initialExp: number) => {
     grandisDailyQuestTotalExp,
     monsterParkTotalExp,
     epicDungeonTotalExp,
-    eventMapExp,
+    VIPSaunaExp,
+    azmothCanyonTotalExp,
+    EXPCouponTotalExp,
     totalExpectedExp,
     level,
     remainingExp,
