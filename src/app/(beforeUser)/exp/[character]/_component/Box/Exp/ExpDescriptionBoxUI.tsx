@@ -16,7 +16,9 @@ const ExpDescriptionBoxUI = ({ character }: Props) => {
     grandisDailyQuestTotalExp,
     monsterParkTotalExp,
     epicDungeonTotalExp,
-    eventMapExp,
+    VIPSaunaExp,
+    azmothCanyonTotalExp,
+    EXPCouponTotalExp,
   } = useLevelProgress(character.character_level, character.character_exp);
 
   return (
@@ -62,9 +64,18 @@ const ExpDescriptionBoxUI = ({ character }: Props) => {
         characterLevel={character.character_level}
         exp={epicDungeonTotalExp}
       />
+      <ExpDescriptionTextUI
+        title={EXP_CONTENT.AZMOTH_CANYON}
+        characterLevel={character.character_level}
+        exp={azmothCanyonTotalExp}
+      />
       <ExpTotalExpTextUI
         characterLevel={character.character_level}
-        exp={araneRiverWeeklyQuestTotalExp + epicDungeonTotalExp}
+        exp={
+          araneRiverWeeklyQuestTotalExp +
+          epicDungeonTotalExp +
+          azmothCanyonTotalExp
+        }
       />
       <Box borderBottom={`1px dashed ${grey[600]}`} my={1} />
 
@@ -72,9 +83,18 @@ const ExpDescriptionBoxUI = ({ character }: Props) => {
         이벤트 경험치
       </Typography>
       <ExpDescriptionTextUI
-        title={EXP_CONTENT.EVENT_MAP}
+        title={EXP_CONTENT.VIP_SAUNA}
         characterLevel={character.character_level}
-        exp={eventMapExp}
+        exp={VIPSaunaExp}
+      />
+      <ExpDescriptionTextUI
+        title={EXP_CONTENT.EXP_COUPON}
+        characterLevel={character.character_level}
+        exp={EXPCouponTotalExp}
+      />
+      <ExpTotalExpTextUI
+        characterLevel={character.character_level}
+        exp={VIPSaunaExp + EXPCouponTotalExp}
       />
     </Box>
   );
