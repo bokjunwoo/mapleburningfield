@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { orange } from '@mui/material/colors';
+import { EXP_CONTENT } from '@/app/constants/rate';
 import { extractWord, truncateToFixed } from '@/app/utils/format';
 import { calculateExpPercentage } from '@/app/utils/mob';
 
@@ -15,7 +16,13 @@ const ExpDescriptionTextUI = ({ title, characterLevel, exp }: Props) => {
   return (
     <Box display="flex">
       <Typography color={orange[600]} variant="body2" mr={1}>
-        [{title === '잠수맵(견습 로봇 놀이터)' ? title : extractWord(title, 0)}]
+        [
+        {title === EXP_CONTENT.VIP_SAUNA ||
+        title === EXP_CONTENT.EXP_COUPON ||
+        title === EXP_CONTENT.AZMOTH_CANYON
+          ? title
+          : extractWord(title, 0)}
+        ]
       </Typography>
       <Typography variant="body2">
         {truncateToFixed(expPercentage, 3)}%
