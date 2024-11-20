@@ -41,7 +41,9 @@ const ExpItemIconUI = ({ region, folder, warning = false }: Props) => {
         mr: 0.5,
         ml: -0.5,
         mt:
-          image === '상급 EXP 교환권' || image === '기본 EXP 교환권'
+          image === '상급 EXP 교환권' ||
+          image === '기본 EXP 교환권' ||
+          image === '황금 토마토 입장권'
             ? 0.7
             : undefined,
       }}
