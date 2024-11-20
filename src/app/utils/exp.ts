@@ -278,3 +278,18 @@ export const calculateAzmothCoin = (value: number): number => {
 
   return azmothCoin;
 };
+
+export const calculateGoldenTomato = (
+  characterLevel: number,
+  score: number,
+): number => {
+  let baseExp = MOB_BASE_EXP[characterLevel];
+
+  if (characterLevel >= 285) {
+    baseExp = MOB_BASE_EXP[285];
+  }
+
+  const scaledExp = baseExp * 300 * 3;
+
+  return scaledExp * score;
+};
