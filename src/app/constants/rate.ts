@@ -50,6 +50,7 @@ export const EXP_CONTENT: ExpContentType = {
   VIP_SAUNA: 'VIP 사우나(잠수맵)',
   EXP_COUPON: 'EXP 교환권',
   AZMOTH_CANYON: '아즈모스 협곡',
+  GOLDEN_TOMATO: '황금 토마토 농장(펀치킹)',
 };
 
 export const TALLAHART_SYMBOL_EXP_ITEMS: SelectItem[] = [

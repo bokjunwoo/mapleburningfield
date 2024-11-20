@@ -57,6 +57,8 @@ type EventMapRegion = '참여 X' | '햇살 사용' | '햇살 미사용';
 
 type VIPSaunaRegion = '이용권 미사용' | '이용권 사용';
 
+type GoldenTomatoRegion = '입장권 미사용' | '입장권 사용';
+
 type EXPCouponRegion = '상급 EXP 교환권' | '기본 EXP 교환권';
 
 type AzmothCanyonRegion = '경험치' | '골드 주화' | '아즈모스 코인';
@@ -71,6 +73,7 @@ type ExpContentTitle =
   | '잠수맵(견습 로봇 놀이터)'
   | 'VIP 사우나(잠수맵)'
   | 'EXP 교환권'
+  | '황금 토마토 농장(펀치킹)'
   | '아즈모스 협곡';
 
 type ExpContentType = {
@@ -83,6 +86,7 @@ type ExpContentType = {
   EVENT_MAP: '잠수맵(견습 로봇 놀이터)';
   VIP_SAUNA: 'VIP 사우나(잠수맵)';
   EXP_COUPON: 'EXP 교환권';
+  GOLDEN_TOMATO: '황금 토마토 농장(펀치킹)';
   AZMOTH_CANYON: '아즈모스 협곡';
 };
 
