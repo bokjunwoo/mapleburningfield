@@ -8,6 +8,7 @@ import AraneRiverQuest from '../List/Daily/AraneRiverQuest';
 import GrandisQuestList from '../List/Daily/GrandisQuestList';
 import MonsterPark from '../List/Daily/MonsterPark';
 import EXPCoupon from '../List/Event/EXPCoupon';
+import GoldenTomato from '../List/Event/GoldenTomato';
 import VIPSauna from '../List/Event/VIPSauna';
 import AraneRiverWeeklyQuest from '../List/Weekly/AraneRiverWeeklyQuest';
 import AzmothCanyon from '../List/Weekly/AzmothCanyon';
@@ -99,6 +100,10 @@ const ExpContentUI = () => {
 
             <Grid item xs={12} lg={4}>
               <EXPCoupon characterLevel={characterLevel} />
+            </Grid>
+
+            <Grid item xs={12} lg={4}>
+              <GoldenTomato characterLevel={characterLevel} />
             </Grid>
           </Grid>
         </Grid>
