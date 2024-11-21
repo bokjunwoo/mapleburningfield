@@ -14,7 +14,7 @@ const PlaceContent = ({ mapInfo }: MapInfoProps) => {
     { isEvent: false, label: '맵 정보' },
     { isEvent: false, label: '폴로 & 프리토' },
     { isEvent: true, label: 'VIP 부스터' },
-    { isEvent: false, label: '이벤트 사냥스킬' },
+    { isEvent: false, label: '이벤트 사냥스킬', isNew: true },
   ];
 
   return (

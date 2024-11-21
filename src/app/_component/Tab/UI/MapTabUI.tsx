@@ -25,9 +25,25 @@ const MapTabUI = ({ value, contents, handleChange, fontSize }: Props) => {
             label={content.label}
             value={content.label}
             icon={
-              content.isEvent === true ? (
+              // eslint-disable-next-line no-nested-ternary
+              content.isEvent ? (
                 <Avatar
                   src="/images/state/hot.png"
+                  alt="icon"
+                  variant="square"
+                  sx={{
+                    width: 27,
+                    height: 16,
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    p: 0,
+                    m: 0,
+                  }}
+                />
+              ) : content.isNew ? (
+                <Avatar
+                  src="/images/state/new.png"
                   alt="icon"
                   variant="square"
                   sx={{

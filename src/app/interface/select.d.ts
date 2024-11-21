@@ -19,5 +19,6 @@ interface SelectThItem {
 
 interface TabItem {
   isEvent: boolean;
+  isNew?: boolean;
   label: string;
 }
