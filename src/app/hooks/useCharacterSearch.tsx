@@ -36,11 +36,14 @@ const useCharacterSearch = (pathName: string) => {
       router.push(`/${pathName}/${value}`);
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
-      let errorMessage = '알 수 없는 오류가 발생했습니다.';
+      let errorMessage = '';
+
+      if (err instanceof Error) {
+        errorMessage = err.message;
+      }
 
       if (err.response?.data?.error?.name) {
         const code = err.response.data.error.name;
-        console.log('여기', err.response.data);
         errorMessage = getErrorMessage(code);
       }
 
