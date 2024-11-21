@@ -19,7 +19,8 @@ const ExpDescriptionTextUI = ({ title, characterLevel, exp }: Props) => {
         [
         {title === EXP_CONTENT.VIP_SAUNA ||
         title === EXP_CONTENT.EXP_COUPON ||
-        title === EXP_CONTENT.AZMOTH_CANYON
+        title === EXP_CONTENT.AZMOTH_CANYON ||
+        title === EXP_CONTENT.GOLDEN_TOMATO
           ? title
           : extractWord(title, 0)}
         ]

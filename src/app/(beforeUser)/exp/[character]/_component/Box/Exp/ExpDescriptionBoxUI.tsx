@@ -19,6 +19,7 @@ const ExpDescriptionBoxUI = ({ character }: Props) => {
     VIPSaunaExp,
     azmothCanyonTotalExp,
     EXPCouponTotalExp,
+    goldenTomatoTotalExp,
   } = useLevelProgress(character.character_level, character.character_exp);
 
   return (
@@ -91,6 +92,11 @@ const ExpDescriptionBoxUI = ({ character }: Props) => {
         title={EXP_CONTENT.EXP_COUPON}
         characterLevel={character.character_level}
         exp={EXPCouponTotalExp}
+      />
+      <ExpDescriptionTextUI
+        title={EXP_CONTENT.GOLDEN_TOMATO}
+        characterLevel={character.character_level}
+        exp={goldenTomatoTotalExp}
       />
       <ExpTotalExpTextUI
         characterLevel={character.character_level}
