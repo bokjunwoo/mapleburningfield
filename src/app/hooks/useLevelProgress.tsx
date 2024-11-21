@@ -40,6 +40,10 @@ const useLevelProgress = (initialLevel: number, initialExp: number) => {
     totalExpectedExpSelector(EXP_CONTENT.EXP_COUPON),
   );
 
+  const goldenTomatoTotalExp = useRecoilValue(
+    totalExpectedExpSelector(EXP_CONTENT.GOLDEN_TOMATO),
+  );
+
   const totalExpectedExp =
     araneRiverDailyQuestTotalExp +
     araneRiverWeeklyQuestTotalExp +
@@ -49,7 +53,8 @@ const useLevelProgress = (initialLevel: number, initialExp: number) => {
     punchkingTotalExp +
     VIPSaunaExp +
     azmothCanyonTotalExp +
-    EXPCouponTotalExp;
+    EXPCouponTotalExp +
+    goldenTomatoTotalExp;
 
   let level = initialLevel;
   let remainingExp = initialExp + totalExpectedExp;
@@ -70,6 +75,7 @@ const useLevelProgress = (initialLevel: number, initialExp: number) => {
     VIPSaunaExp,
     azmothCanyonTotalExp,
     EXPCouponTotalExp,
+    goldenTomatoTotalExp,
     totalExpectedExp,
     level,
     remainingExp,
