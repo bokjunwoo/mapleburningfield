@@ -9,6 +9,10 @@ import {
 import characterServiceInstance from '@/app/api/Service/ocid/CharacterService';
 
 export const validateCharacterInfo = (data: CharacterInfoBase) => {
+  if (data.character_class === '카마도 탄지로') {
+    throw new Error('카마도 탄지로 캐릭터는 이용이 제한됩니다.');
+  }
+
   if (data.character_level < 200) {
     throw new Error('캐릭터 레벨이 200 미만입니다.');
   }

@@ -49,7 +49,8 @@ type CharacterClass =
   | '아델'
   | '카인'
   | '라라'
-  | '칼리';
+  | '칼리'
+  | '카마도 탄지로';
 
 interface CharacterInfoBase {
   date: string;
