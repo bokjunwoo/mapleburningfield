@@ -3,7 +3,7 @@ import ExpUnableTextUI from '../../../Typography/ExpUnableTextUI';
 import { calculateExpPercentage } from '@/app/utils/mob';
 
 type Props = {
-  item: ExpectedExpRegion<MonsterParkRegion>;
+  item: ExpectedExpRegion<ExtremeParkRegion>;
   characterLevel: number;
   isObtainable: boolean;
 };

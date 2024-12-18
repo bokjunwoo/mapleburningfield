@@ -5,7 +5,7 @@ import ExtremeParkItemTextUI from './ExtremeParkItemTextUI';
 import useExpContent from '@/app/hooks/useExpContent';
 
 type Props = {
-  item: ExpectedExpRegion<MonsterParkRegion>;
+  item: ExpectedExpRegion<ExtremeParkRegion>;
   title: ExpContentTitle;
   characterLevel: number;
 };
