@@ -140,6 +140,7 @@ export const findTitleExpRate = (data: CharacterItemEquipment): number => {
     'LET"S MAPLE': 20,
     '엘 클리어': 30,
     '시그너스 기사단': 40,
+    보스: 40,
   };
 
   return isExpired ? titleBonuses[data.title.title_name] || 0 : 0;

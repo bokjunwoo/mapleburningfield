@@ -47,9 +47,9 @@ const useStatInfo = (mapInfo: MapInfo) => {
   };
 
   const expInfo: StatTextItem = {
-    label: '경험치 획득량',
+    label: '추가 경험치',
     iconName: 'exp',
-    value: expRate,
+    value: expRate - 100,
   };
 
   const burningFieldInfo: StatTextItem = {

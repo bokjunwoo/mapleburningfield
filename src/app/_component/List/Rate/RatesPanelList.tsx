@@ -10,7 +10,7 @@ const RatesPanelList = () => {
   const mesoDropRate = useRecoilValue(totalMesoDropRateSelector);
 
   const rateList: SelectItem[] = [
-    { label: '경험치 획득량', value: expRate },
+    { label: '추가 경험치', value: expRate - 100 },
     { label: '아이템 드롭률', value: itemDropRate },
     { label: '메소 획득량', value: mesoDropRate },
   ];

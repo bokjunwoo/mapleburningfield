@@ -14,7 +14,7 @@ const ExpEventStat = () => {
   });
 
   const rateOption: SelectMenuItem = {
-    label: `${EVENT_BUFF_SKILL_NAME}(마약)`,
+    label: `${EVENT_BUFF_SKILL_NAME}(경험치/마약)`,
     key: RATE_NAME.EXP_EVENT_STAT,
     items: [
       { value: 0, label: '미적용' },
