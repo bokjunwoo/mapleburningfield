@@ -15,6 +15,7 @@ interface EventBuffAllRates extends EventBuffExpContentRates {
 }
 
 interface ProcessCharacterData {
+  isEventWorld: boolean;
   ability: CharacterAbility;
   hyperStat: CharacterHyperStat;
   vmatrix: CharacterVCoreEquipment;
@@ -32,6 +33,7 @@ interface ProcessCharacterData {
 }
 
 interface ProcessExpData {
+  eventWorldExpRate: number;
   expHyperStat: number;
   elvenBlessing: number;
   expRateHolySymbol: number;
