@@ -13,6 +13,7 @@ import VIPSauna from '../List/Event/VIPSauna';
 import AraneRiverWeeklyQuest from '../List/Weekly/AraneRiverWeeklyQuest';
 import AzmothCanyon from '../List/Weekly/AzmothCanyon';
 import EpicDungeon from '../List/Weekly/EpicDungeon';
+import ExtremePark from '../List/Weekly/ExtremePark';
 import BannerTitle from '@/app/_component/Typography/BannerTitle';
 import { characterInfoState } from '@/app/atoms/characterInfoState';
 
@@ -62,6 +63,7 @@ const ExpContentUI = () => {
             <Grid container spacing={1}>
               <Grid item xs={12} lg={4}>
                 <EpicDungeon characterLevel={characterLevel} />
+                <ExtremePark characterLevel={characterLevel} />
               </Grid>
 
               <Grid item xs={12} lg={4}>

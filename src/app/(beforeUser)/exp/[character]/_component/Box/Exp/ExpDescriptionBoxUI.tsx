@@ -15,6 +15,7 @@ const ExpDescriptionBoxUI = ({ character }: Props) => {
     araneRiverWeeklyQuestTotalExp,
     grandisDailyQuestTotalExp,
     monsterParkTotalExp,
+    extremeParkTotalExp,
     epicDungeonTotalExp,
     VIPSaunaExp,
     azmothCanyonTotalExp,
@@ -61,6 +62,11 @@ const ExpDescriptionBoxUI = ({ character }: Props) => {
         exp={araneRiverWeeklyQuestTotalExp}
       />
       <ExpDescriptionTextUI
+        title={EXP_CONTENT.EXTREME_PARK}
+        characterLevel={character.character_level}
+        exp={extremeParkTotalExp}
+      />
+      <ExpDescriptionTextUI
         title={EXP_CONTENT.EPIC_DUNGEON}
         characterLevel={character.character_level}
         exp={epicDungeonTotalExp}
@@ -74,6 +80,7 @@ const ExpDescriptionBoxUI = ({ character }: Props) => {
         characterLevel={character.character_level}
         exp={
           araneRiverWeeklyQuestTotalExp +
+          extremeParkTotalExp +
           epicDungeonTotalExp +
           azmothCanyonTotalExp
         }
