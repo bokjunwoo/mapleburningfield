@@ -25,6 +25,7 @@ import {
 } from './api/vCoreEquipment';
 
 const processExpData = ({
+  eventWorldExpRate,
   expHyperStat,
   elvenBlessing,
   expRateHolySymbol,
@@ -42,6 +43,7 @@ const processExpData = ({
   expRateSymbol,
 }: ProcessExpData) => {
   return [
+    { label: RATE_NAME.EVENT_WORLD, value: eventWorldExpRate },
     { label: RATE_NAME.HYPER_STAT, value: expHyperStat },
     {
       label: RATE_NAME.ELVEN_BLESSING,
@@ -126,6 +128,7 @@ const processMesoDropData = ({
 };
 
 export const processCharacterData = ({
+  isEventWorld,
   hyperStat,
   vmatrix,
   hexaMatrix,
@@ -157,6 +160,7 @@ export const processCharacterData = ({
   const symbolRates = findSymbolRates(symbol);
 
   const processedExpData = processExpData({
+    eventWorldExpRate: isEventWorld ? 50 : 0,
     expHyperStat: expHyperStatLevel,
     elvenBlessing: calculateElvenBlessingExpRate(elvenBlessingSkillLevel),
     expRateHolySymbol:

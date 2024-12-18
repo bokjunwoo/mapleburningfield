@@ -16,6 +16,7 @@ import { itemDropRateState } from './itemDropState';
 import { mesoDropRateState } from './mesoDropState';
 import { portalState } from './portalState';
 import { regionListState } from './regionListState';
+import { findEventWorld } from '../utils/api/server';
 
 const useCharacterData = (characterName: string) => {
   const setCharacterInfo = useSetRecoilState(characterInfoState);
@@ -43,6 +44,8 @@ const useCharacterData = (characterName: string) => {
       const { classBishop, classNightLoad, classShadower, eventBuff } =
         await getclasses(ocid, characterInfo.character_class);
 
+      const isEventWorld = findEventWorld(characterInfo);
+
       const [
         hyperStat,
         ability,
@@ -68,6 +71,7 @@ const useCharacterData = (characterName: string) => {
       ]);
 
       const processedData = processCharacterData({
+        isEventWorld,
         hyperStat,
         ability,
         linkSkill,
