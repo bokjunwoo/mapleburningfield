@@ -7,9 +7,6 @@ import {
 } from '@/app/atoms/expectedExpState';
 import { eventBuffExpContentState } from '@/app/atoms/expRateState';
 import {
-  EXTREME_DUNGEON_MIN_REGION_LEVEL,
-  EXTREME_PARK_EXP,
-  EXTREME_PARK_REGION,
   HIGH_END_DUNGEON_EXP,
   HIGH_END_DUNGEON_MIN_REGIONS_LEVEL,
   HIGH_END_DUNGEON_REGIONS,
@@ -49,32 +46,9 @@ const MonsterPark = ({ characterLevel }: CharacterLevelProps) => {
       };
     }, [highestLevelRegion, eventBuffExpContentRate, expMultiplier]);
 
-  const expectedExpExtremeDungeon: ExpectedExpRegion<MonsterParkRegion> =
-    useMemo(() => {
-      return {
-        region: EXTREME_PARK_REGION,
-        exp: calculateExpectedModifiedExp(
-          EXTREME_PARK_EXP[characterLevel],
-          eventBuffExpContentRate.monsterParkAdditionalExpRate,
-          expMultiplier,
-        ),
-        count: 1,
-        checked:
-          characterLevel >=
-          EXTREME_DUNGEON_MIN_REGION_LEVEL[EXTREME_PARK_REGION],
-        warning: false,
-      };
-    }, [characterLevel, eventBuffExpContentRate, expMultiplier]);
-
-  const monsterParkRegions = useMemo(() => {
-    return characterLevel >= 260
-      ? [expectedExpExtremeDungeon, expectedExpHighEndDungeon]
-      : [expectedExpHighEndDungeon, expectedExpExtremeDungeon];
-  }, [characterLevel, expectedExpExtremeDungeon, expectedExpHighEndDungeon]);
-
   useEffect(() => {
-    setExpectedExpRegion(monsterParkRegions);
-  }, [monsterParkRegions, setExpectedExpRegion]);
+    setExpectedExpRegion([expectedExpHighEndDungeon]);
+  }, [expectedExpHighEndDungeon, setExpectedExpRegion]);
 
   return (
     <MonsterParkListUI
