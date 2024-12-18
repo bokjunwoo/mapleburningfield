@@ -1,3 +1,4 @@
+import { Alert } from '@mui/material';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -59,6 +60,11 @@ export default function RootLayout({
           <ClientRoot>
             <Header />
             <Nav />
+            <Alert severity="warning">
+              12/19(목) 오전 6시부터 오후 1시까지(총 7시간) 메이플스토리 Open
+              API 점검이 진행됩니다. 이로 인해 서비스 이용이 제한되니 양해
+              부탁드립니다.
+            </Alert>
             {children}
           </ClientRoot>
           <Footer />
