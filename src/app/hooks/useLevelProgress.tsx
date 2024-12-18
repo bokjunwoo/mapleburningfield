@@ -20,6 +20,10 @@ const useLevelProgress = (initialLevel: number, initialExp: number) => {
     totalExpectedExpSelector(EXP_CONTENT.MONSTER_PARK),
   );
 
+  const extremeParkTotalExp = useRecoilValue(
+    totalExpectedExpSelector(EXP_CONTENT.EXTREME_PARK),
+  );
+
   const epicDungeonTotalExp = useRecoilValue(
     totalExpectedExpSelector(EXP_CONTENT.EPIC_DUNGEON),
   );
@@ -49,6 +53,7 @@ const useLevelProgress = (initialLevel: number, initialExp: number) => {
     araneRiverWeeklyQuestTotalExp +
     grandisDailyQuestTotalExp +
     monsterParkTotalExp +
+    extremeParkTotalExp +
     epicDungeonTotalExp +
     punchkingTotalExp +
     VIPSaunaExp +
@@ -71,6 +76,7 @@ const useLevelProgress = (initialLevel: number, initialExp: number) => {
     araneRiverWeeklyQuestTotalExp,
     grandisDailyQuestTotalExp,
     monsterParkTotalExp,
+    extremeParkTotalExp,
     epicDungeonTotalExp,
     VIPSaunaExp,
     azmothCanyonTotalExp,

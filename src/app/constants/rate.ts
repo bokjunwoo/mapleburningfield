@@ -31,6 +31,7 @@ export const RATE_NAME = {
   VIP_COUPON: 'VIP_coupon',
   WEALTH_ACQUISITION_POTION: 'wealth_acquisition_potion',
   TALLAHART_SYMBOL: 'Tallahart_symbol',
+  EVENT_WORLD: 'event_world',
 };
 
 export const RATE_KEY = {
@@ -44,6 +45,7 @@ export const EXP_CONTENT: ExpContentType = {
   ARANE_RIVER_WEEKLY_QUEST: '아케인리버 주간퀘스트',
   GRANDIS_DAILY_QUEST: '그란디스 일일퀘스트',
   MONSTER_PARK: '몬스터파크',
+  EXTREME_PARK: '익스트림 몬스터파크',
   EPIC_DUNGEON: '에픽던전',
   EVENT_PUNCHKING: '펀치킹(비밀 기록 탈환)',
   EVENT_MAP: '잠수맵(견습 로봇 놀이터)',

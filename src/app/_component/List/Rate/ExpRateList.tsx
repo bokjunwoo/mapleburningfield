@@ -2,6 +2,7 @@ import RateGridUI from '../../Grid/RateGridUI';
 import AccumulationPotion from './Exp/AccumulationPotion';
 import AzmothPotion from './Exp/AzmothPotion';
 import BoostRing from './Exp/BoostRing';
+import EventWorld from './Exp/EventWorld';
 import ElvenBlessing from './Exp/ElvenBlessing';
 import ExpCoupon from './Exp/ExpCoupon';
 import ExpEtc from './Exp/ExpEtc';
@@ -74,8 +75,8 @@ const ExpRateList = () => {
         LoadedDice,
         ExpShowDown,
         ExpEventStat,
+        EventWorld,
         ExpEtc,
-        EmptyRateListItemUI,
       ],
       bgcolor: listRGB.purple,
     },
