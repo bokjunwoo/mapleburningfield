@@ -67,7 +67,7 @@ const EXPCouponUI = ({
         color={orange[900]}
         fontWeight={500}
       >
-        ❖ 이벤트 진행기간 24.10.17 ~ 24.12.18
+        ❖ 이벤트 진행기간 24.12.19 ~ 25.02.19
       </Typography>
     </ExpContentListUI>
   );
