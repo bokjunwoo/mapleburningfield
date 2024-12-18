@@ -40,7 +40,7 @@ type HighEndDungeonRegion =
 
 type ExtremeParkRegion = '익스트림 몬스터파크';
 
-type MonsterParkRegion = HighEndDungeonRegion | ExtremeParkRegion;
+type MonsterParkRegion = HighEndDungeonRegion;
 
 type EpicDungeonRegion = '하이마운틴' | '앵글러컴퍼니';
 
@@ -68,6 +68,7 @@ type ExpContentTitle =
   | '아케인리버 주간퀘스트'
   | '그란디스 일일퀘스트'
   | '몬스터파크'
+  | '익스트림 몬스터파크'
   | '에픽던전'
   | '펀치킹(비밀 기록 탈환)'
   | '잠수맵(견습 로봇 놀이터)'
@@ -81,6 +82,7 @@ type ExpContentType = {
   ARANE_RIVER_WEEKLY_QUEST: '아케인리버 주간퀘스트';
   GRANDIS_DAILY_QUEST: '그란디스 일일퀘스트';
   MONSTER_PARK: '몬스터파크';
+  EXTREME_PARK: '익스트림 몬스터파크';
   EPIC_DUNGEON: '에픽던전';
   EVENT_PUNCHKING: '펀치킹(비밀 기록 탈환)';
   EVENT_MAP: '잠수맵(견습 로봇 놀이터)';
@@ -127,7 +129,6 @@ interface CalculateTotalExpPercentageParams<T> {
 }
 
 interface CalculateMonsterParkTotalExpPercentageParams {
-  characterLevel: number;
   regions: MonsterParkRegion[];
   expMultiplier: string;
 }

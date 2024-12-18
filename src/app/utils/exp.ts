@@ -1,7 +1,6 @@
 import {
   ARANE_RIVER_DAILY_QUEST_REGIONS,
   GRANDIS_DAILY_QUEST_REGIONS,
-  EXTREME_PARK_EXP,
   HIGH_END_DUNGEON_EXP,
 } from '../constants/exp/daily';
 import { MOB_BASE_EXP } from '../constants/exp/event';
@@ -70,21 +69,14 @@ export const calculateTotalExp = <T>({
 };
 
 export const calculateMonsterParkTotalExp = ({
-  characterLevel,
   regions,
   expMultiplier,
 }: CalculateMonsterParkTotalExpPercentageParams): number => {
   let total = 0;
 
   regions.forEach((region) => {
-    if (region === '익스트림 몬스터파크') {
-      const expReward =
-        EXTREME_PARK_EXP[characterLevel] * Number(expMultiplier);
-      total += expReward;
-    } else {
-      const expReward = HIGH_END_DUNGEON_EXP[region] * Number(expMultiplier);
-      total += expReward;
-    }
+    const expReward = HIGH_END_DUNGEON_EXP[region] * Number(expMultiplier);
+    total += expReward;
   });
 
   return total;

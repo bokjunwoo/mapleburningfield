@@ -85,7 +85,6 @@ export const EXTREME_PARK_REGION: ExtremeParkRegion = '익스트림 몬스터파
 
 export const MONSTER_PARK_ALL_REGIONS: MonsterParkRegion[] = [
   ...HIGH_END_DUNGEON_REGIONS,
-  EXTREME_PARK_REGION,
 ];
 
 export const DAILY_QUEST_ALL_REGIONS: ExpQuestContent[] = [
