@@ -1,4 +1,4 @@
-import { Stack, Avatar, Box } from '@mui/material';
+import { Stack, Box } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 

@@ -5,6 +5,7 @@ import UnionServiceInstance from '../api/Service/ocid/UnionService';
 import { ALL_REGIONS } from '../constants/region';
 import { validateCharacterInfo, getclasses } from '../utils/api/charater';
 import { getErrorMessage } from '../utils/api/error';
+import { findEventWorld } from '../utils/api/server';
 import { findNearestQuestRegion } from '../utils/exp';
 import { levelByExpEventBuff } from '../utils/portal';
 import { processCharacterData } from '../utils/process';
@@ -16,7 +17,6 @@ import { itemDropRateState } from './itemDropState';
 import { mesoDropRateState } from './mesoDropState';
 import { portalState } from './portalState';
 import { regionListState } from './regionListState';
-import { findEventWorld } from '../utils/api/server';
 
 const useCharacterData = (characterName: string) => {
   const setCharacterInfo = useSetRecoilState(characterInfoState);
