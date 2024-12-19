@@ -82,6 +82,7 @@ const ExpContentUI = () => {
 
               <Grid item xs={12} lg={4}>
                 <EpicDungeon characterLevel={characterLevel} />
+                <ExtremePark characterLevel={characterLevel} />
               </Grid>
 
               <Grid item xs={12} lg={4}>
