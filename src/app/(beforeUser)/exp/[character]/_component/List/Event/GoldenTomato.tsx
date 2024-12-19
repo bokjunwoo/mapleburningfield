@@ -41,8 +41,6 @@ const GoldenTomato = ({ characterLevel }: CharacterLevelProps) => {
     setExpectedExpRegion(expectedExpRegionList);
   }, [expectedExpRegionList, setExpectedExpRegion]);
 
-  console.log(goldenTomatoExp.toLocaleString());
-
   return (
     <GoldenTomatoUI
       title={EXP_CONTENT.GOLDEN_TOMATO}
