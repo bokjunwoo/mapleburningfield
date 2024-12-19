@@ -75,7 +75,7 @@ export const TALLAHART_SYMBOL_DROP_ITEMS: SelectItem[] = [
 
 export const PC_ROOM_EXP_ITEMS: SelectItem[] = [
   { id: 0, value: 0, label: '미적용' },
-  { id: 1, value: 30, label: '적용 (+30%)' },
+  { id: 1, value: 80, label: '적용 (+80%)' },
 ];
 
 export const PC_ROOM_DROP_ITEMS: SelectItem[] = [
