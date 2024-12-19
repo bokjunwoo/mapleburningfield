@@ -59,7 +59,7 @@ const HomePage = () => {
                     color={yellow[400]}
                     textAlign="center"
                   >
-                    ❖ 11/21 신규 업데이트 안내
+                    ❖ 12/19 신규 업데이트 안내
                   </Typography>
                 </Link>
                 <Typography variant="body2" fontSize={12} mb={1} color="white">
