@@ -1,7 +1,8 @@
 import { useEffect, useMemo } from 'react';
-import { useSetRecoilState } from 'recoil';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
 import ExtremeParkListUI from './UI/ExtremeParkListUI';
 import { expectedExpRegionState } from '@/app/atoms/expectedExpState';
+import { eventBuffExpContentState } from '@/app/atoms/expRateState';
 import {
   EXTREME_DUNGEON_MIN_REGION_LEVEL,
   EXTREME_PARK_EXP,
@@ -15,12 +16,15 @@ const ExtremePark = ({ characterLevel }: CharacterLevelProps) => {
     ExpectedExpRegion<ExtremeParkRegion>[]
   >(expectedExpRegionState(EXP_CONTENT.EXTREME_PARK));
 
+  const eventBuffExpContentRate = useRecoilValue(eventBuffExpContentState);
+
   const expectedExpExtremeDungeon: ExpectedExpRegion<ExtremeParkRegion> =
     useMemo(() => {
       return {
         region: EXTREME_PARK_REGION,
         exp: calculateExpectedModifiedExp(
           EXTREME_PARK_EXP[characterLevel],
+          eventBuffExpContentRate.monsterParkAdditionalExpRate,
           400,
         ),
         count: 1,
@@ -29,7 +33,7 @@ const ExtremePark = ({ characterLevel }: CharacterLevelProps) => {
           EXTREME_DUNGEON_MIN_REGION_LEVEL[EXTREME_PARK_REGION],
         warning: false,
       };
-    }, [characterLevel]);
+    }, [characterLevel, eventBuffExpContentRate.monsterParkAdditionalExpRate]);
 
   useEffect(() => {
     setExpectedExpRegion([expectedExpExtremeDungeon]);
