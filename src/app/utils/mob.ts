@@ -31,41 +31,39 @@ export const calculateMobIndividualExpMultiplier = (
   let multiplier: number;
 
   if (levelDifference >= 40) {
-    multiplier = 0.7;
-  } else if (levelDifference > 20) {
-    multiplier = 0.95 - (levelDifference - 15) * 0.01;
+    multiplier = 0.7; // 70%
+  } else if (levelDifference >= 21) {
+    multiplier = 0.7 + (levelDifference - 20) * 0.01; // 71% ~ 89%
   } else if (levelDifference >= 19) {
-    multiplier = 0.95;
+    multiplier = 0.95; // 95%
   } else if (levelDifference >= 17) {
-    multiplier = 0.96;
+    multiplier = 0.96; // 96%
   } else if (levelDifference >= 15) {
-    multiplier = 0.97;
+    multiplier = 0.97; // 97%
   } else if (levelDifference >= 13) {
-    multiplier = 0.98;
+    multiplier = 0.98; // 98%
   } else if (levelDifference >= 11) {
-    multiplier = 0.99;
-  } else if (levelDifference >= 9) {
-    multiplier = 1;
+    multiplier = 0.99; // 99%
+  } else if (levelDifference === 10) {
+    multiplier = 1; // 100%
   } else if (levelDifference >= 5) {
-    multiplier = 1.05;
+    multiplier = 1.05; // 105%
   } else if (levelDifference >= 2) {
-    multiplier = 1.1;
-  } else if (levelDifference >= 1) {
-    multiplier = 1.2;
+    multiplier = 1.1; // 110%
   } else if (levelDifference >= -1) {
-    multiplier = 1.2;
+    multiplier = 1.2; // 120%
   } else if (levelDifference >= -4) {
-    multiplier = 1.1;
+    multiplier = 1.1; // 110%
   } else if (levelDifference >= -9) {
-    multiplier = 0.95;
+    multiplier = 1.05; // 105%
   } else if (levelDifference >= -20) {
-    multiplier = 1 - (levelDifference - -20) * 0.01;
+    multiplier = 1 + (levelDifference + 10) * 0.01; // 100% ~ 90%
   } else if (levelDifference >= -35) {
-    multiplier = 1 - (levelDifference - -35) * 0.04;
+    multiplier = 0.7 + (levelDifference + 20) * 0.04; // 70% ~ 14%
   } else if (levelDifference >= -39) {
-    multiplier = 0.1;
+    multiplier = 0.1; // 10%
   } else {
-    multiplier = 0;
+    multiplier = 0; // 0%
   }
 
   return multiplier;
