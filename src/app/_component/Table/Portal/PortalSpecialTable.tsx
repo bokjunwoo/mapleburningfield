@@ -56,7 +56,7 @@ const PortalSpecialTable = ({ mapInfo }: MapInfoProps) => {
     type: 'Pritto',
     cells: [
       {
-        type: 'Pritto',
+        type: 'Pollo',
         label: '에스페시아',
         expMultiplier: PORTAL_EXP_MULTIPLIER.TOTEM_SLASH,
         initialCount: PORTAL_INITIAL_TIME.TOTEM_SLASH,
