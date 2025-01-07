@@ -2,6 +2,17 @@ import { useSetRecoilState } from 'recoil';
 import characterServiceInstance from '../api/Service/ocid/CharacterService';
 import ocidServiceInstance from '../api/Service/ocid/OcidService';
 import UnionServiceInstance from '../api/Service/ocid/UnionService';
+import {
+  characterInfoState,
+  characterOcidState,
+} from '../atoms/characterInfoState';
+import characterLevelState from '../atoms/characterLevelState';
+import { errorMessageState } from '../atoms/errorMessageState';
+import { eventBuffExpContentState, expRateState } from '../atoms/expRateState';
+import { itemDropRateState } from '../atoms/itemDropState';
+import { mesoDropRateState } from '../atoms/mesoDropState';
+import { portalState } from '../atoms/portalState';
+import { regionListState } from '../atoms/regionListState';
 import { ALL_REGIONS } from '../constants/region';
 import { validateCharacterInfo, getclasses } from '../utils/api/charater';
 import { getErrorMessage } from '../utils/api/error';
@@ -9,14 +20,6 @@ import { findEventWorld } from '../utils/api/server';
 import { findNearestQuestRegion } from '../utils/exp';
 import { levelByExpEventBuff } from '../utils/portal';
 import { processCharacterData } from '../utils/process';
-import { characterInfoState, characterOcidState } from './characterInfoState';
-import characterLevelState from './characterLevelState';
-import { errorMessageState } from './errorMessageState';
-import { eventBuffExpContentState, expRateState } from './expRateState';
-import { itemDropRateState } from './itemDropState';
-import { mesoDropRateState } from './mesoDropState';
-import { portalState } from './portalState';
-import { regionListState } from './regionListState';
 
 const useCharacterData = (characterName: string) => {
   const setCharacterInfo = useSetRecoilState(characterInfoState);

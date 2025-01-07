@@ -8,7 +8,7 @@ import ExpLayoutUI from './Layout/ExpLayoutUI';
 import CharacterInfoUI from '@/app/_component/Box/Character/CharacterInfoUI';
 import FooterGoogleAdSense from '@/app/_component/Google/FooterGoogleAdSense';
 import NavGoogleAdSense from '@/app/_component/Google/NavGoogleAdSense';
-import useCharacterData from '@/app/atoms/useCharacterData';
+import useCharacterData from '@/app/hooks/useCharacterData';
 import ErrorPage from '@/app/Page/ErrorPage';
 import LoadingPage from '@/app/Page/LoadingPage';
 

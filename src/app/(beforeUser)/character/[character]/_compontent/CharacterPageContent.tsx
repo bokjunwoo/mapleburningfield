@@ -9,7 +9,7 @@ import FooterGoogleAdSense from '@/app/_component/Google/FooterGoogleAdSense';
 import NavGoogleAdSense from '@/app/_component/Google/NavGoogleAdSense';
 import AreaTab from '@/app/_component/Tab/AreaTab';
 import RegionTabUI from '@/app/_component/Tab/UI/RegionTabUI';
-import useCharacterData from '@/app/atoms/useCharacterData';
+import useCharacterData from '@/app/hooks/useCharacterData';
 import ErrorPage from '@/app/Page/ErrorPage';
 import LoadingPage from '@/app/Page/LoadingPage';
 
