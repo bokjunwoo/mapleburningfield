@@ -9,7 +9,7 @@ const BoosterCardUI = ({ mapInfo }: MapInfoProps) => {
   return (
     <PlaceCardContentUI>
       <BannerTitle text="아이템 정보" />
-      <SkillInfoUI mapInfo={mapInfo} skillInfo={BOOSTER_INFO} />
+      <SkillInfoUI skillInfo={BOOSTER_INFO} />
 
       <BannerTitle text="적용된 스탯" />
       <BoosterStat mapInfo={mapInfo} />
