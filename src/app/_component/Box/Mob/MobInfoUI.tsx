@@ -21,7 +21,6 @@ const MobInfoUI = ({ region, mob, burningField }: Props) => {
     mob,
     additionalExpRate: burningField,
   });
-  console.log('expMultiplier', expMultiplier);
 
   return (
     <Box bgcolor="#2b2b2b" p={2} borderRadius={2} border="thick double white">
