@@ -1,21 +1,21 @@
 export const EVENT_SKILL_INFO: SkillInfo = {
   ICON: 'event_skill',
-  NAME: '즐거운 청소 시간',
-  DATE: '2024.12.19 ~ 2025.01.15',
+  NAME: '두근두근 청소시간',
+  DATE: '2025.01.16 ~ 2025.02.12',
   MAIN_DESCRIPTION:
-    '레벨 범위 몬스터 300마리당 스킬 1회 발동하며 최대 15마리의 적을 3000% 데미지로 1번 공격하는 스킬 발동',
+    '레벨 범위 몬스터 250마리당 스킬 1회 발동하며 최대 15마리의 적을 3000% 데미지로 1번 공격하는 폭발이 6회 발동하는 스킬이 4회 발동',
   TIME_DESCRIPTION: '캐릭터당 일일 30회',
-  EXP_DESCRIPTION: '스킬발동시 약 175마리 분량의 경험치 획득',
-  INITIAL_MOB_KILL: 175,
-  REQUIRED_MOB_COUNT: 300,
+  EXP_DESCRIPTION: '스킬발동시 약 165마리 분량의 경험치 획득',
+  INITIAL_MOB_KILL: 165,
+  REQUIRED_MOB_COUNT: 250,
   DELAY: 5,
   ACTIVATION_COUNT: 30,
 };
 
 export const BOOSTER_INFO: SkillInfo = {
   ICON: 'booster',
-  NAME: 'VIP 부스터',
-  DATE: '종료(새벽별 연회 이벤트에서 제공되지 않습니다)',
+  NAME: 'VIP 부스터 / HEXA 부스터',
+  DATE: 'VIP 부스터(2025.02.06 ~ 2025.02.19) / HEXA 부스터(상시)',
   MAIN_DESCRIPTION:
     '부스터 몹젠(5.5초 + 서버랙)마다 10마리씩 젠되며 최대 15마리를 넘지 않습니다',
   TIME_DESCRIPTION: '캐릭터당 일일 10회',
