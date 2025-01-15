@@ -167,6 +167,29 @@ const 리버스시티: RegionInfo[] = [
   {
     id: 10,
     map_region: '리버스시티',
+    map_name: '숨겨진 연구열차',
+    symbol: 100,
+    mobs: [
+      {
+        name: '강력한 수색형 T드론 A형',
+        level: 210,
+        number_of_mob: 13,
+        exp: 248003,
+        meso: 1575,
+      },
+      {
+        name: '강력한 수색형 T드론 B형',
+        level: 210,
+        number_of_mob: 14,
+        exp: 248003,
+        meso: 1575,
+      },
+    ],
+    burning_field: 0,
+  },
+  {
+    id: 11,
+    map_region: '리버스시티',
     map_name: '지하열차 1',
     symbol: 60,
     mobs: [
@@ -181,7 +204,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 11,
+    id: 12,
     map_region: '리버스시티',
     map_name: '지하열차 2',
     symbol: 60,
@@ -204,7 +227,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 12,
+    id: 13,
     map_region: '리버스시티',
     map_name: '지하열차 3',
     symbol: 60,
@@ -220,7 +243,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 13,
+    id: 14,
     map_region: '리버스시티',
     map_name: '숨겨진 지하열차',
     symbol: 100,
@@ -243,7 +266,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 14,
+    id: 15,
     map_region: '리버스시티',
     map_name: '지상열차 1',
     symbol: 60,
@@ -259,7 +282,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 15,
+    id: 16,
     map_region: '리버스시티',
     map_name: '지상열차 2',
     symbol: 60,
@@ -282,7 +305,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 16,
+    id: 17,
     map_region: '리버스시티',
     map_name: '지상열차 3',
     symbol: 60,
@@ -298,7 +321,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 17,
+    id: 18,
     map_region: '리버스시티',
     map_name: '숨겨진 M타워',
     symbol: 100,
@@ -321,7 +344,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 18,
+    id: 19,
     map_region: '리버스시티',
     map_name: 'M타워 2',
     symbol: 60,
@@ -337,7 +360,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 19,
+    id: 20,
     map_region: '리버스시티',
     map_name: 'M타워 3',
     symbol: 60,
@@ -360,7 +383,7 @@ const 리버스시티: RegionInfo[] = [
     burning_field: 0,
   },
   {
-    id: 20,
+    id: 21,
     map_region: '리버스시티',
     map_name: 'M타워 4',
     symbol: 60,
