@@ -9,7 +9,7 @@ const EventSkillCardUI = ({ mapInfo }: MapInfoProps) => {
   return (
     <PlaceCardContentUI>
       <BannerTitle text="스킬 정보" />
-      <SkillInfoUI mapInfo={mapInfo} skillInfo={EVENT_SKILL_INFO} />
+      <SkillInfoUI skillInfo={EVENT_SKILL_INFO} />
 
       <BannerTitle text="적용된 스탯" />
       <EventSkillStat mapInfo={mapInfo} />

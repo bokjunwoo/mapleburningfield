@@ -1,28 +1,11 @@
 import { Box, Typography, Avatar, Divider } from '@mui/material';
 import { grey, orange } from '@mui/material/colors';
-import useMobTotalRewards from '@/app/hooks/useMobTotalRewards';
-import { formatTime } from '@/app/utils/format';
-import { calculateRemainingTime } from '@/app/utils/portal';
 
 type Props = {
-  mapInfo: MapInfo;
   skillInfo: SkillInfo;
 };
 
-const SkillInfoUI = ({ mapInfo, skillInfo }: Props) => {
-  const { totalMobExp } = useMobTotalRewards({
-    mapInfo,
-    additionalExpRate: 0,
-  });
-
-  const remainingTime = calculateRemainingTime({
-    expReward: 6211659600,
-    mobExp: totalMobExp,
-    count: 100,
-  });
-
-  console.log(formatTime(remainingTime));
-
+const SkillInfoUI = ({ skillInfo }: Props) => {
   return (
     <Box
       bgcolor="#2b2b2b"
