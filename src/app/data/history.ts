@@ -11,7 +11,7 @@ export const historyList: HistoryItem[] = [
         title: '기타 변경 사항',
         list: [
           '이벤트 사냥 스킬이 종료됩니다.',
-          'PC방 경험치 혜택이 기존 30%으로 변경됩니다.'
+          'PC방 경험치 혜택이 기존 30%으로 변경됩니다.',
         ],
       },
     ],
