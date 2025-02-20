@@ -1,7 +1,7 @@
 export const EVENT_SKILL_INFO: SkillInfo = {
   ICON: 'event_skill',
   NAME: '두근두근 청소시간',
-  DATE: '2025.02.13 ~ 2025.02.19',
+  DATE: '이벤트 종료',
   MAIN_DESCRIPTION:
     '레벨 범위 몬스터 250마리당 스킬 1회 발동하며 최대 15마리의 적을 3000% 데미지로 1번 공격하는 폭발이 6회 발동하는 스킬이 4회 발동',
   TIME_DESCRIPTION: '캐릭터당 일일 30회',
